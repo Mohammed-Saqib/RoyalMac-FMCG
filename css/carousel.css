@@ -97,7 +97,11 @@
       z-index: 5;
       position: relative;
     }
-    
+    .wave1,.wave2,.wave3{
+      width: 100%;
+      display: inline-block;
+      vertical-align: center;
+    }
     .wave1 use {
       -webkit-animation: move-forever1 10s linear infinite;
       animation: move-forever1 10s linear infinite;

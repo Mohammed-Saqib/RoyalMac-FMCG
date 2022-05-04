@@ -33,8 +33,9 @@ let productContainer = document.querySelector('.product-container'); // p-left-a
 let proImgview = document.querySelector('.p-left'); // p-left-anim
 let options = {
     root: null,
-    rootMargin: '-300px',
-    threshold: 0,
+    // rootMargin: '-300px',
+    rootMargin: '0px',
+    threshold: 0.0,
   }
   let observer = new IntersectionObserver((entries) => {
         let visible = entries[0];
