@@ -1,0 +1,260 @@
+.navbar-container{
+    /* outline: 1px solid; */
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+}
+.navLogo{
+    width:7rem;
+    height: 7rem;
+    margin-left: 3rem;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px 0 rgba(0, 0, 0, 0.8),
+    0 0 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 255, 255, .1);
+    position: relative;
+    overflow: hidden !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
+    -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
+    -webkit-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
+    -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
+}
+.navLogo img{
+    z-index: 1;
+    width: 90%;
+    animation: animUpDown 2s ease-in-out infinite alternate-reverse both;
+    -webkit-animation: animUpDown 2s ease-in-out infinite alternate-reverse both;
+    -moz-animation: animUpDown 2s ease-in-out infinite alternate-reverse both;
+    -o-animation: animUpDown 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes animUpDown {
+    0% {
+      transform: translateY(4px);
+      -webkit-transform: translateY(4px);
+      -moz-transform: translateY(4px);
+      -o-transform: translateY(4px);
+    }
+    100% {
+      transform: translateY(-4px);
+      -webkit-transform: translateY(-4px);
+      -moz-transform: translateY(-4px);
+      -o-transform: translateY(-4px);
+    }
+}
+
+@-webkit-keyframes animUpDown {
+    0% {
+      transform: translateY(4px);
+      -webkit-transform: translateY(4px);
+      -moz-transform: translateY(4px);
+      -o-transform: translateY(4px);
+    }
+    100% {
+      transform: translateY(-4px);
+      -webkit-transform: translateY(-4px);
+      -moz-transform: translateY(-4px);
+      -o-transform: translateY(-4px);
+    }
+}
+
+@-moz-keyframes animUpDown {
+    0% {
+      transform: translateY(4px);
+      -webkit-transform: translateY(4px);
+      -moz-transform: translateY(4px);
+      -o-transform: translateY(4px);
+    }
+    100% {
+      transform: translateY(-4px);
+      -webkit-transform: translateY(-4px);
+      -moz-transform: translateY(-4px);
+      -o-transform: translateY(-4px);
+    }
+}
+
+.navLogo::after,.navLogo::before{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, .9);
+    border: none !important;
+    outline: none !important;
+}
+.navLogo::after{
+    border-radius: 45%;
+    animation: animWave 5s linear infinite;
+    -webkit-animation: animWave 5s linear infinite;
+    -moz-animation: animWave 5s linear infinite;
+    -o-animation: animWave 5s linear infinite;
+}
+.navLogo::before{
+    border-radius: 35%;
+    background: rgba(255, 255, 255, .5);
+    animation: animWave 5s linear infinite;
+    -webkit-animation: animWave 5s linear infinite;
+    -moz-animation: animWave 5s linear infinite;
+    -o-animation: animWave 5s linear infinite;
+}
+@keyframes animWave{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        -moz-transform: translate(-50%, -50%) rotate(0deg);
+        -o-transform: translate(-50%, -50%) rotate(0deg);
+        top: -30%;
+    }
+    50%{
+        top: -50%;
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        -moz-transform: translate(-50%, -50%) rotate(360deg);
+        -o-transform: translate(-50%, -50%) rotate(360deg);
+        top: -30%;
+    }
+}
+@-webkit-keyframes animWave{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        -moz-transform: translate(-50%, -50%) rotate(0deg);
+        -o-transform: translate(-50%, -50%) rotate(0deg);
+        top: -30%;
+    }
+    50%{
+        top: -50%;
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        -moz-transform: translate(-50%, -50%) rotate(360deg);
+        -o-transform: translate(-50%, -50%) rotate(360deg);
+        top: -30%;
+    }
+}
+
+@-moz-keyframes animWave{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+        -webkit-transform: translate(-50%, -50%) rotate(0deg);
+        -moz-transform: translate(-50%, -50%) rotate(0deg);
+        -o-transform: translate(-50%, -50%) rotate(0deg);
+        top: -30%;
+    }
+    50%{
+        top: -50%;
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(360deg);
+        -webkit-transform: translate(-50%, -50%) rotate(360deg);
+        -moz-transform: translate(-50%, -50%) rotate(360deg);
+        -o-transform: translate(-50%, -50%) rotate(360deg);
+        top: -30%;
+    }
+}
+
+.navButton{
+    /* outline: 1px solid; */
+    width:5rem;
+    height: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    min-width: 100%;
+    border-radius: .5rem;
+    background: rgba(255, 255, 255, .3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: clip-path 0.5s ease;
+    -o-transition: clip-path 0.5s ease;
+    -webkit-transition: clip-path 0.5s ease;
+    -moz-transition: clip-path 0.5s ease;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+li a{
+ display: inline-block;
+ width: 100%;
+ padding: 10px;
+ font-size: 1.6rem;
+ line-height: 2rem;
+ text-align: center;
+ color: var(--whiteColor);
+}
+
+li a:hover{
+    color: var(--goldColor);
+    background: rgba(255, 255, 255, .4);
+}
+
+.subDrop li a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+.subDrop{
+    display: none;
+    
+}
+.navButton img:active{
+    transition: transform 0.4s ease;
+    -webkit-transition: transform 0.4s ease;
+    -moz-transition: transform 0.4s ease;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+}
+.childDropDown:hover .subDrop{
+    display: block;
+}
+.active-dropdown{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@media screen and (max-width:750px) {
+    .navbar-container{
+        width: 100%;
+        height: 80px;
+    }
+    .navLogo{
+        width:5rem !important;
+        height: 5rem !important;
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .navLogo{
+        width:3.5rem !important;
+        height: 3.5rem !important;
+        margin-left: 1.5rem;
+    }
+}

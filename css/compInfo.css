@@ -1,0 +1,122 @@
+.succ-container{
+    margin: 20px 0;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40px;
+    overflow: hidden;
+}
+
+.s-left{
+    width: calc(50% - 40px);
+}
+
+.s-left img{
+    width: 100%;
+    object-position: center center;
+    object-fit: cover;
+}
+
+.s-right{
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.s-content{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.s-c-heading{
+    font-weight: 500;
+    color: rgba(48,25,52,0.8) !important;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.s-c-heading::after{
+    position: absolute;
+    content: "";
+    width: 10%;
+    height: 2px;
+    border-radius: 10px;
+    background: var(--goldColor);
+    top: 100%;
+    left: 0%;
+}
+
+.s-c-para{
+    font-family: Regular;
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    text-align:justify;
+}
+
+@media only screen and (max-width:1300px){
+    .s-c-heading{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    
+    .s-c-para{
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+}
+
+@media only screen and (max-width:1000px){
+    .s-c-heading{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+    
+    .s-c-para{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+}
+
+@media only screen and (max-width:750px){
+    .succ-container{
+        flex-direction: column;
+        gap: 10px 0;
+    }
+    .s-left{
+        width: 80%;
+    }
+    .s-right{
+        width: 100%;
+        row-gap: 10px;
+    }
+    .s-c-heading{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .s-c-para{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .s-c-heading{
+        font-size: 1.4rem;
+        line-height: 2rem;
+    }
+    .s-c-para{
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .succ-container{
+        width: 90% !important;
+    }
+}
