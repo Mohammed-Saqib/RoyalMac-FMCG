@@ -170,7 +170,6 @@
 }
 
 .navButton{
-    /* outline: 1px solid; */
     width:5rem;
     height: 5rem;
     margin-right: 5rem;
@@ -179,16 +178,66 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    border-radius: 50%;
+    z-index: 1;
 }
+.navButton::before{
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    animation: pulsate-btn 2s infinite forwards;
+    -webkit-animation: pulsate-btn 2s infinite forwards;
+    -o-animation: pulsate-btn 2s infinite forwards;
+    -moz-animation: pulsate-btn 2s infinite forwards;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    -moz-animation-timing-function: steps;
+    -o-animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid rgba(255,255,255, 0.5);
+    background: rgba(255,255,255, 0.4);
+    z-index: -1;
+}
+.act-scrl-bg::before{
+    border: 5px solid rgba(17,20,235, 0.5);
+    background: rgba(17,20,235, 0.4);
+    z-index: -1;
+}
+.navButton:hover::before{
+    animation: none;
+    width: 0%;
+    height: 0%;
+    border: none;
+}
+
+@keyframes pulsate-btn {
+    0% {
+        transform: scale(0.7, 0.7);
+        -webkit-transform: scale(0.7, 0.7);
+        -o-transform: scale(0.7, 0.7);
+        -moz-transform: scale(0.7, 0.7);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        opacity: 0;
+    }
+  }
+
 .dropdown{
     position: absolute;
     top: 100%;
     left: -50%;
     min-width: 100%;
     border-radius: .5rem;
-    background: rgba(255, 255, 255, .3);
+    /* background: rgba(255, 255, 255, .3); */
     border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    box-shadow: 0 0 32px rgba(255,255,255,0.2),0 0 32px rgba(255,255,255,0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     transition: clip-path 0.5s ease;
@@ -196,7 +245,14 @@
     -webkit-transition: clip-path 0.5s ease;
     -moz-transition: clip-path 0.5s ease;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
+
 }
+
+.act-scrl-bg #menu-icon > path{
+    fill: rgba(48,25,52,0.8);
+}
+
 li a{
  display: inline-block;
  width: 100%;
@@ -205,10 +261,11 @@ li a{
  line-height: 2rem;
  text-align: center;
  color: var(--whiteColor);
+ text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 li a:hover{
-    color: var(--goldColor);
+    /* color: var(--goldColor); */
     background: rgba(255, 255, 255, .4);
 }
 
@@ -224,7 +281,7 @@ li a:hover{
     display: none;
     
 }
-.navButton img:active{
+.navButton #menu-icon:active{
     transition: transform 0.4s ease;
     -webkit-transition: transform 0.4s ease;
     -moz-transition: transform 0.4s ease;
