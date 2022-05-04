@@ -20,9 +20,9 @@ $(document).ready(function () {
         }, speed);
         const close = document.querySelector('.active-dropdown');
         if (close == null) {
-            document.querySelector('.navButton img').setAttribute('src', './images/SVG/menu.svg');
+            document.querySelector('.navButton img').setAttribute('src', './images/svg/menu.svg');
         } else {
-            document.querySelector('.navButton img').setAttribute('src', './images/SVG/close.svg')
+            document.querySelector('.navButton img').setAttribute('src', './images/svg/close.svg')
         }
     });
 });
