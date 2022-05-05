@@ -232,7 +232,7 @@
 .dropdown{
     position: absolute;
     top: 100%;
-    left: -50%;
+    left: -100%;
     min-width: 100%;
     border-radius: .5rem;
     /* background: rgba(255, 255, 255, .3); */
@@ -253,35 +253,42 @@
     fill: rgba(48,25,52,0.8);
 }
 
-li a{
+#menuItems{
  display: inline-block;
  width: 100%;
  padding: 10px;
  font-size: 1.6rem;
  line-height: 2rem;
  text-align: center;
+ text-transform: capitalize;
  color: var(--whiteColor);
  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
-li a:hover{
+#menuItems:hover{
     /* color: var(--goldColor); */
     background: rgba(255, 255, 255, .4);
 }
 
-.subDrop li a{
+.subDrop li #menuSubItems{
     display: inline-block;
     width: 100%;
     padding: 10px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     line-height: 1.8rem;
     text-align: center;
+    text-transform: uppercase;
+    color: var(--whiteColor);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.subDrop li #menuSubItems:hover{
+    background: rgba(255, 255, 255, .4);
 }
 .subDrop{
     display: none;
     
 }
-.navButton #menu-icon:active{
+.navButton:active #menu-icon{
     transition: transform 0.4s ease;
     -webkit-transition: transform 0.4s ease;
     -moz-transition: transform 0.4s ease;
@@ -317,6 +324,6 @@ li a:hover{
     .navButton{
         width:4rem;
         height: 4rem;
-        margin-right: 1.5rem;
+        margin-right: 2.5rem;
     }
 }
