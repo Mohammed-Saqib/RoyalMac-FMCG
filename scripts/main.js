@@ -3,7 +3,7 @@
 let speed = 12000;
 let stopingIntervals;
 $(document).ready(function () {
-    $(".navButton").click(function () {
+    $("#menu-icon").click(function () {
         $(".dropdown").toggleClass("active-dropdown")
         if (stopingIntervals) {
             clearTimeout(stopingIntervals);

@@ -324,7 +324,7 @@
     .navButton{
         width:4rem;
         height: 4rem;
-        margin-right: 2.5rem;
+        margin-right: 3rem !important;
     }
     #menuItems{
         font-size: 1.4rem;
