@@ -326,4 +326,12 @@
         height: 4rem;
         margin-right: 2.5rem;
     }
+    #menuItems{
+        font-size: 1.4rem;
+        line-height: 1.4rem;
+       }
+       .subDrop li #menuSubItems{
+           font-size: 1rem;
+           line-height: 1.4rem;
+       }
 }
