@@ -288,7 +288,7 @@
     display: none;
     
 }
-.navButton:active #menu-icon{
+#menu-icon:active{
     transition: transform 0.4s ease;
     -webkit-transition: transform 0.4s ease;
     -moz-transition: transform 0.4s ease;
