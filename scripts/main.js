@@ -2,6 +2,7 @@
 
 let speed = 12000;
 let stopingIntervals;
+const navButton = document.querySelector('.navButton');
 $(document).ready(function () {
     $("#menu-icon").click(function () {
         $(".dropdown").toggleClass("active-dropdown")
@@ -13,15 +14,19 @@ $(document).ready(function () {
             $(".dropdown").removeClass("active-dropdown")
             const close = document.querySelector('.active-dropdown');
             if (close == null) {
+                document.querySelector('.stop-anim') ? navButton.classList.remove('stop-anim') : " ";
                 document.getElementById('menu-icon').innerHTML = '<path d="M0 3H20V5H0V3ZM0 9H20V11H0V9ZM0 15H20V17H0V15Z" fill="white"/>'
             } else {
+                navButton.classList.add('stop-anim');
                 document.getElementById('menu-icon').innerHTML = '<path d="M10 8.586L2.929 1.515L1.515 2.929L8.586 10L1.515 17.071L2.929 18.485L10 11.414L17.071 18.485L18.485 17.071L11.414 10L18.485 2.929L17.071 1.515L10 8.586V8.586Z" fill="white"/>'
             }
         }, speed);
         const close = document.querySelector('.active-dropdown');
         if (close == null) {
+            document.querySelector('.stop-anim') ? navButton.classList.remove('stop-anim') : " ";
             document.getElementById('menu-icon').innerHTML = '<path d="M0 3H20V5H0V3ZM0 9H20V11H0V9ZM0 15H20V17H0V15Z" fill="white"/>'
         } else {
+            navButton.classList.add('stop-anim');
             document.getElementById('menu-icon').innerHTML = '<path d="M10 8.586L2.929 1.515L1.515 2.929L8.586 10L1.515 17.071L2.929 18.485L10 11.414L17.071 18.485L18.485 17.071L11.414 10L18.485 2.929L17.071 1.515L10 8.586V8.586Z" fill="white"/>'
         }
     });

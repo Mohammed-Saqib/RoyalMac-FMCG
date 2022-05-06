@@ -179,6 +179,7 @@
     justify-content: center;
     position: relative;
     border-radius: 50%;
+    cursor: pointer;
     z-index: 1;
 }
 .navButton::before{
@@ -205,11 +206,12 @@
     background: rgba(17,20,235, 0.4);
     z-index: -1;
 }
-.navButton:hover::before{
+
+.stop-anim::before{
     animation: none;
-    width: 0%;
-    height: 0%;
     border: none;
+    width: 0;
+    height: 0;
 }
 
 @keyframes pulsate-btn {
@@ -231,7 +233,7 @@
 
 .dropdown{
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: -100%;
     min-width: 100%;
     border-radius: .5rem;
