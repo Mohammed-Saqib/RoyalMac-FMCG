@@ -41,12 +41,17 @@ window.addEventListener('scroll', function (e) {
 
  //-----------------------------------Carousel Animation On Images As Slides----------------------------------//
 function startAnimation() {
-    const tl = gsap.timeline({ repeat: -1, defaults: { duration: 8 } })
+    const tl = gsap.timeline({})
     tl
-        .from('.slide1', { opacity: 0, ease: 'power3.inOut' })
-        .from('.slide2', { opacity: 0, ease: 'power3.inOut' })
-        .from('.slide3', { opacity: 0, ease: 'power3.inOut' })
-        .from('.slide4', { opacity: 0, ease: 'power3.inOut' })
+        // .from('.slide1', { opacity: 0, ease: 'power3.inOut' })
+        // .from('.slide2', { opacity: 0, ease: 'power3.inOut' })
+        // .from('.slide3', { opacity: 0, ease: 'power3.inOut' })
+        // .from('.slide4', { opacity: 0, ease: 'power3.inOut' })
+        .from('.slide', { duration : 20 , opacity: 0.2, ease: 'power3.inOut', stagger : {
+            each : 5,
+            repeat: -1,
+            ease: "power3.inOut",
+        } })
 }
 
 window.addEventListener('load', startAnimation());
