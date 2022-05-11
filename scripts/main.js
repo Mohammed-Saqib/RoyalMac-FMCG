@@ -5,6 +5,7 @@ let stopingIntervals;
 const navButton = document.querySelector('.navButton');
 $(document).ready(function () {
     $("#menu-icon").click(function () {
+        console.log("hellow orld");
         $(".dropdown").toggleClass("active-dropdown")
         if (stopingIntervals) {
             clearTimeout(stopingIntervals);
@@ -34,8 +35,21 @@ $(document).ready(function () {
 
 window.addEventListener('scroll', function (e) { 
     e.preventDefault();
-    this.scrollY > 150 ? document.querySelector('.navButton').classList.add('act-scrl-bg') : document.querySelector('.navButton').classList.remove('act-scrl-bg')
+    this.scrollY > 175 ? document.querySelector('.navButton').classList.add('act-scrl-bg') : document.querySelector('.navButton').classList.remove('act-scrl-bg')
  })
+
+
+ //-----------------------------------Carousel Animation On Images As Slides----------------------------------//
+function startAnimation() {
+    const tl = gsap.timeline({ repeat: -1, defaults: { duration: 8 } })
+    tl
+        .from('.slide1', { opacity: 0, ease: 'power3.inOut' })
+        .from('.slide2', { opacity: 0, ease: 'power3.inOut' })
+        .from('.slide3', { opacity: 0, ease: 'power3.inOut' })
+        .from('.slide4', { opacity: 0, ease: 'power3.inOut' })
+}
+
+window.addEventListener('load', startAnimation());
 
 // ====================================== * Product * ======================================= -->
 

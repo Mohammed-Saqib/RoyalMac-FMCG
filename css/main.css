@@ -44,38 +44,3 @@ body{
     flex-direction: column;
     align-items: center;
 }
-
-.header-container{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: url(../images/header-bg.webp) no-repeat;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.header-container::before{
-  content: "";
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
-}
-
-@keyframes bckColorChange {
-    /* 0%{background-color: rgba(102,0,153,0.9);} */
-    0%{background-color: rgba(11, 44, 11,0.9);}
-    25%{background-color: rgba(17,20,235,0.9);}
-    50%{background-color: rgba(255,14,20,0.9);}
-    75%{background-color: rgba(3,150,255,0.9);}
-    100%{background-color: rgba(223, 0, 255,0.9);}
-}
-
-@media screen and (max-width: 600px) {
-    .header-container{
-      background-position: center;
-    }
-}

@@ -1,15 +1,14 @@
 .navbar-container{
-    /* outline: 1px solid; */
-    width: 100%;
+    width: 100% !important;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 100;
     position: fixed;
     top: 0;
     left: 0;
     background-color: transparent;
+    z-index: 10 ;
 }
 .navLogo{
     width:7rem;
@@ -180,7 +179,7 @@
     position: relative;
     border-radius: 50%;
     cursor: pointer;
-    z-index: 1;
+    z-index: 11 !important;
 }
 .navButton::before{
     content: "";
@@ -199,12 +198,11 @@
     border-radius: 50%;
     border: 5px solid rgba(255,255,255, 0.5);
     background: rgba(255,255,255, 0.4);
-    z-index: -1;
+    z-index: 9;
 }
 .act-scrl-bg::before{
     border: 5px solid rgba(17,20,235, 0.5);
     background: rgba(17,20,235, 0.4);
-    z-index: -1;
 }
 
 .stop-anim::before{
@@ -212,6 +210,13 @@
     border: none;
     width: 0;
     height: 0;
+}
+
+#menu-icon{
+    z-index: 11 !important;
+}
+.act-scrl-bg #menu-icon > path{
+    fill: rgba(48,25,52,0.8);
 }
 
 @keyframes pulsate-btn {
@@ -234,10 +239,9 @@
 .dropdown{
     position: absolute;
     top: 110%;
-    left: -100%;
-    min-width: 100%;
+    left: -100px;
+    width: 150px;
     border-radius: .5rem;
-    /* background: rgba(255, 255, 255, .3); */
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 32px rgba(255,255,255,0.2),0 0 32px rgba(255,255,255,0.1);
     backdrop-filter: blur(5px);
@@ -248,11 +252,8 @@
     -moz-transition: clip-path 0.5s ease;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
+    z-index: 12;
 
-}
-
-.act-scrl-bg #menu-icon > path{
-    fill: rgba(48,25,52,0.8);
 }
 
 #menuItems{
@@ -261,18 +262,19 @@
  padding: 10px;
  font-size: 1.4rem;
  line-height: 2rem;
- text-align: center;
+ text-align: left;
  text-transform: uppercase;
  color: var(--whiteColor);
  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+ border-bottom: 0.5px solid rgba(255, 255, 255, .2);
+ border-radius: .25rem;
 }
 
 #menuItems:hover{
-    /* color: var(--goldColor); */
     background: rgba(255, 255, 255, .4);
 }
 
-.subDrop li #menuSubItems{
+#menuSubItems{
     display: inline-block;
     width: 100%;
     padding: 10px;
@@ -283,7 +285,7 @@
     color: var(--whiteColor);
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
-.subDrop li #menuSubItems:hover{
+#menuSubItems:hover{
     background: rgba(255, 255, 255, .4);
 }
 .subDrop{
@@ -303,6 +305,7 @@
 }
 .active-dropdown{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    z-index: 11;
 }
 
 @media screen and (max-width:750px) {
@@ -327,6 +330,9 @@
         width:4rem;
         height: 4rem;
         margin-right: 3rem !important;
+    }
+    .dropdown{
+        width: 125px;
     }
     #menuItems{
         font-size: 1.2rem;
