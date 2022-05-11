@@ -239,7 +239,7 @@
 .dropdown{
     position: absolute;
     top: 110%;
-    left: -100px;
+    left: -75px;
     width: 150px;
     border-radius: .5rem;
     border: 1px solid rgba(255, 255, 255, 0.1);

@@ -47,8 +47,8 @@ function startAnimation() {
         // .from('.slide2', { opacity: 0, ease: 'power3.inOut' })
         // .from('.slide3', { opacity: 0, ease: 'power3.inOut' })
         // .from('.slide4', { opacity: 0, ease: 'power3.inOut' })
-        .from('.slide', { duration : 20 , opacity: 0.2, ease: 'power3.inOut', stagger : {
-            each : 5,
+        .from('.slide', { duration : 20 , opacity: 0.1, ease: 'power3.inOut', stagger : {
+            each : 4,
             repeat: -1,
             ease: "power3.inOut",
         } })
