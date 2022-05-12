@@ -1,5 +1,5 @@
 .header-container{
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,8 +7,6 @@
   background: url(../images/header-bg.webp) no-repeat;
   /* background: url(../images/img1.webp) no-repeat; */
   background-attachment: fixed;
-  background-position: center center;
-  background-size: 100% 100%;
   position: relative;
   overflow: hidden !important;
 }
@@ -128,11 +126,11 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
 }
 
 @keyframes fill {
-  0%{fill: rgba(11, 44, 11,.9);}
-  25%{fill: rgba(17,20,235,.9);}
-  50%{fill: rgba(255,14,20,.9);}
-  75%{fill: rgba(3,150,255,.9);}
-  100%{fill: rgba(223, 0, 255,.9);}
+  0%{fill: rgba(11, 44, 11,1);}
+  25%{fill: rgba(17,20,235,1);}
+  50%{fill: rgba(255,14,20,1);}
+  75%{fill: rgba(3,150,255,1);}
+  100%{fill: rgba(223, 0, 255,1);}
 }
   
   .left-carousel{
@@ -348,7 +346,7 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
   
     @media screen and (max-width: 450px) {
       .carousel{
-          margin-top: 70px;
+          margin-top: 40px;
           width: 80vw !important;
           display: flex;
           flex-direction: column-reverse;
@@ -356,6 +354,7 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
           justify-content: center;
           overflow: auto;
           padding: 5px 10px !important;
+          z-index: 1;
       }
       .carousel-head{
         padding: 0px 0px;
@@ -363,7 +362,7 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
       }
       .carousel-head #logo{
         width: 250px;
-        height:150px;
+        height:180px;
       }
   
       .c-heading h1{
@@ -387,7 +386,16 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
       .right-carousel{
           width: 40%;
           display: none;
-      }   
+      }  
+      
+      @keyframes bckColorChange {
+        /* 0%{background-color: rgba(102,0,153,0.8);} */
+        0%{background-color: rgba(11, 44, 11,.7);}
+        25%{background-color: rgba(17,20,235,.7);}
+        50%{background-color: rgba(255,14,20,.7);}
+        75%{background-color: rgba(3,150,255,.7);}
+        100%{background-color: rgba(223, 0, 255,.7);}
+      }
   }
 
   @media screen and (max-width: 350px) {
