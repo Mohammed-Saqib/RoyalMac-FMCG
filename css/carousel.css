@@ -4,11 +4,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background: url(../images/header-bg.webp) no-repeat; */
-  background: url(../images/img1.webp) no-repeat;
+  background: url(../images/header-bg.webp) no-repeat;
+  /* background: url(../images/img1.webp) no-repeat; */
   background-attachment: fixed;
   background-position: center center;
-  background-size: 100% 50%;
+  background-size: 100% 100%;
   position: relative;
   overflow: hidden !important;
 }
@@ -81,10 +81,59 @@ z-index: 2;
       display: flex;
       align-items: center;
       justify-content: space-around;
-      z-index: 2;
       color: #FFF;
       overflow: hidden;
-  }
+      z-index: 2;
+}
+.carousel-head{
+  padding: 30px 0px;
+  display: none;
+}
+
+.carousel-head #logo{
+  width: 500px;
+  height:200px;
+  animation: fill 30s ease-in-out infinite alternate-reverse both;
+  -webkit-animation: fill 30s ease-in-out infinite alternate-reverse both;
+  -moz-animation: fill 30s ease-in-out infinite alternate-reverse both;
+  -o-animation: fill 30s ease-in-out infinite alternate-reverse both;
+}
+
+.carousel-head #logo path{
+  padding: 80px 0px !important;
+}
+#logo path:nth-child(1){
+animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.6s;   /*  4  */
+}
+#logo path:nth-child(2){
+animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.8s;   /*  5  */
+}
+#logo path:nth-child(3){
+animation: up-down 1.5s ease-in-out infinite alternate-reverse both 1.2s;   /*  7  */
+}
+#logo path:nth-child(4){
+animation: up-down 1.5s ease-in-out infinite alternate-reverse both 1s;   /*  6  */
+}
+#logo path:nth-child(5){
+animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  2  */
+}
+#logo path:nth-child(6){
+ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.4s;   /*  3  */
+}
+#logo path:nth-child(7){
+ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 1.4s;   /*  8  */
+}
+#logo path:nth-child(8){
+ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0s;    /*  1  */ 
+}
+
+@keyframes fill {
+  0%{fill: rgba(11, 44, 11,.9);}
+  25%{fill: rgba(17,20,235,.9);}
+  50%{fill: rgba(255,14,20,.9);}
+  75%{fill: rgba(3,150,255,.9);}
+  100%{fill: rgba(223, 0, 255,.9);}
+}
   
   .left-carousel{
       width: 60%;
@@ -268,6 +317,9 @@ z-index: 2;
         padding: 30px 0px;
         margin-top: 80px;
       }
+      .carousel-head #logo{
+        width: 400px;
+      }
       .c-heading h1{
           font-size: 2rem;
           line-height: 2rem;
@@ -304,7 +356,14 @@ z-index: 2;
           justify-content: center;
           overflow: auto;
           padding: 5px 10px !important;
-
+      }
+      .carousel-head{
+        padding: 0px 0px;
+        display: block;
+      }
+      .carousel-head #logo{
+        width: 250px;
+        height:150px;
       }
   
       .c-heading h1{
@@ -322,11 +381,22 @@ z-index: 2;
       .left-carousel{
           width: 100%;
           row-gap: 5px;
+          display: none;
       }
   
       .right-carousel{
           width: 40%;
           display: none;
       }   
+  }
+
+  @media screen and (max-width: 350px) {
+    .carousel-head{
+      padding: 10px 0px;
+    }
+    .carousel-head #logo{
+      width: 200px;
+      height:100px;
+    }
   }
   
