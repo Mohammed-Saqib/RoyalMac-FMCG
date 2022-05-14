@@ -1,0 +1,78 @@
+.testimonials-container{
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    background: var(--whiteColor);
+}
+
+.testi-card{
+    width: 100%;
+}
+.testi-crd-container{
+    width: 100%;
+    min-height: 140px;
+    border-radius: 1rem;
+    margin-top: 10px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, .3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+.double-quotes{
+    margin-bottom: 3rem;
+}
+.double-quotes::before{
+    content: "\201C";
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(102,0,153,.2);
+    vertical-align: -16px;
+    margin-right: 10px;
+}
+.double-quotes::after{
+    content: "\201D";
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(102,0,153,.2);
+    vertical-align: -23px;
+    margin-left: 10px;
+}
+.testi-crd-profile{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.testi-crd-profile img{
+    width: 90px !important;
+    border-radius: 50%;
+    margin: -4rem 0 0 4rem;
+    position: relative;
+    z-index: 2;
+    border: 6px solid rgba(102,0,153,.2);
+}
+.testi-crd-username{
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 0 0 0 4rem;
+}
+
+.owl-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    margin-top: 2rem;
+}
+.owl-dots .owl-dot{
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid rgba(102,0,153,1) !important;
+}
+.owl-dot.active{
+    background: rgba(102,0,153,1) !important;
+}

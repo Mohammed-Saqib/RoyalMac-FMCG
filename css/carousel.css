@@ -4,8 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(../images/header-bg.webp) no-repeat;
-  /* background: url(../images/img1.webp) no-repeat; */
+  /* background: url(../images/header-bg.webp) no-repeat; */
+  background: url(../images/testimonial.jpg) no-repeat;
+  background-position: 0px  -100px;
   background-attachment: fixed;
   position: relative;
   overflow: hidden !important;
@@ -64,17 +65,11 @@ z-index: 2;
 
 @keyframes bckColorChange {
   /* 0%{background-color: rgba(102,0,153,0.9);} */
-  /* 0%{background-color: rgba(11, 44, 11,.9);}
+  0%{background-color: rgba(11, 44, 11,.9);}
   25%{background-color: rgba(17,20,235,.9);}
   50%{background-color: rgba(255,14,20,.9);}
   75%{background-color: rgba(3,150,255,.9);}
-  100%{background-color: rgba(223, 0, 255,.9);} */
-  
-  0%{background-color: rgba(216,108,112,.9);}
-  25%{background-color: rgba(118,196,174,.9);}
-  50%{background-color: rgba(202,189,128,.9);}
-  75%{background-color: rgba(202,236,207,.9);}
-  100%{background-color: rgba(159,194,186,.9);}
+  100%{background-color: rgba(223, 0, 255,.9);}
 }
 
 .carousel{
@@ -132,17 +127,11 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
 }
 
 @keyframes fill {
-  /* 0%{fill: rgba(11, 44, 11,1);}
+  0%{fill: rgba(11, 44, 11,1);}
   25%{fill: rgba(17,20,235,1);}
   50%{fill: rgba(255,14,20,1);}
   75%{fill: rgba(3,150,255,1);}
-  100%{fill: rgba(223, 0, 255,1);} */
-
-  0%{fill: rgba(216,108,112,1);}
-  25%{fill: rgba(118,196,174,1);}
-  50%{fill: rgba(202,189,128,1);}
-  75%{fill: rgba(202,236,207,1);}
-  100%{fill: rgba(159,194,186,1);}
+  100%{fill: rgba(223, 0, 255,1);}
 }
   
   .left-carousel{
@@ -402,17 +391,11 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
       
       @keyframes bckColorChange {
         /* 0%{background-color: rgba(102,0,153,0.8);} */
-        /* 0%{background-color: rgba(11, 44, 11,.7);}
+        0%{background-color: rgba(11, 44, 11,.7);}
         25%{background-color: rgba(17,20,235,.7);}
         50%{background-color: rgba(255,14,20,.7);}
         75%{background-color: rgba(3,150,255,.7);}
-        100%{background-color: rgba(223, 0, 255,.7);} */
-
-        0%{background-color: rgba(216,108,112,.7);}
-  25%{background-color: rgba(118,196,174,.7);}
-  50%{background-color: rgba(202,189,128,.7);}
-  75%{background-color: rgba(202,236,207,.7);}
-  100%{background-color: rgba(159,194,186,.7);}
+        100%{background-color: rgba(223, 0, 255,.7);}
       }
   }
 

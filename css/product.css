@@ -1,10 +1,229 @@
 .comp-info{
     width: 100%;
+    padding: 10px;
 }
 .para{
     text-align: justify;
     font-size: 1.8rem;
     line-height: 2.6rem;
+}
+
+.products-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 15px;
+    padding: 10px;
+    overflow: hidden;
+}
+.product-card{
+    width: 100%;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.product-card:hover{  
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.product-card picture{
+    width: 100%;
+    height: 350px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.product-card picture img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover !important;
+}
+.pro-crd-info{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+}
+.product-card:hover{
+    background-color: rgba(102,0,153,.02);
+}
+.crd-title{
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: rgba(102,0,153,1);
+    text-align: left;
+}
+.crd-title:hover{
+    color: var(--goldColor);
+}
+.crd-link{
+    align-self: flex-start;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: left;
+    /* color: rgba(102,0,153,1); */
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.crd-link::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 25px;
+    height: 2px;
+    width: 25%;
+    transform: scaleY(1);
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform .3s ease-in-out;
+}
+
+.crd-link::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    border-radius: 25px;
+    height: 2px;
+    width: 75%;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.product-card:nth-child(1) .crd-link{
+    color : var(--color1);
+}
+.product-card:nth-child(2) .crd-link{
+    color : var(--color2);
+}
+.product-card:nth-child(3) .crd-link{
+    color : var(--color3);
+}
+.product-card:nth-child(4) .crd-link{
+    color : var(--color4);
+}
+.product-card:nth-child(5) .crd-link{
+    color : var(--color5);
+}
+.product-card:nth-child(6) .crd-link{
+    color : var(--color6);
+}
+.product-card:nth-child(7) .crd-link{
+    color : var(--color7);
+}
+.product-card:nth-child(8) .crd-link{
+    color : var(--color8);
+}
+.product-card:nth-child(9) .crd-link{
+    color : var(--color9);
+}
+.product-card:nth-child(10) .crd-link{
+    color : var(--color10);
+}
+.product-card:nth-child(11) .crd-link{
+    color : var(--color11);
+}
+.product-card:nth-child(12) .crd-link{
+    color : var(--color12);
+}
+
+.crd-link:hover::after, .product-card:hover .crd-link::after{
+    transform: scaleX(1.1);
+    transform-origin: right;
+}
+.crd-link:hover::before, .product-card:hover .crd-link::before{
+    transform: scaleX(0.5);
+    transform-origin: left;
+}
+.product-card:nth-child(1) .crd-link::before , .product-card:nth-child(1) .crd-link::after{
+    background-color: var(--color1);
+}
+.product-card:nth-child(2) .crd-link::before , .product-card:nth-child(2) .crd-link::after{
+    background-color: var(--color2);
+}
+.product-card:nth-child(3) .crd-link::before , .product-card:nth-child(3) .crd-link::after{
+    background-color: var(--color3);
+}
+.product-card:nth-child(4) .crd-link::before , .product-card:nth-child(4) .crd-link::after{
+    background-color: var(--color4);
+}
+.product-card:nth-child(5) .crd-link::before , .product-card:nth-child(5) .crd-link::after{
+    background-color: var(--color5);
+}
+.product-card:nth-child(6) .crd-link::before , .product-card:nth-child(6) .crd-link::after{
+    background-color: var(--color6);
+}
+.product-card:nth-child(7) .crd-link::before , .product-card:nth-child(7) .crd-link::after{
+    background-color: var(--color7);
+}
+.product-card:nth-child(8) .crd-link::before , .product-card:nth-child(8) .crd-link::after{
+    background-color: var(--color8);
+}
+.product-card:nth-child(9) .crd-link::before , .product-card:nth-child(9) .crd-link::after{
+    background-color: var(--color9);
+}
+.product-card:nth-child(10) .crd-link::before , .product-card:nth-child(10) .crd-link::after{
+    background-color: var(--color10);
+}
+.product-card:nth-child(11) .crd-link::before , .product-card:nth-child(11) .crd-link::after{
+    background-color: var(--color11);
+}
+.product-card:nth-child(12) .crd-link::before , .product-card:nth-child(12) .crd-link::after{
+    background-color: var(--color12);
+}
+.product-card:nth-child(1){
+    border-bottom: 3px solid var(--color1);
+}
+.product-card:nth-child(2){
+    border-bottom: 3px solid var(--color2);
+}
+.product-card:nth-child(3){
+    border-bottom: 3px solid var(--color3);
+}
+.product-card:nth-child(4){
+    border-bottom: 3px solid var(--color4);
+}
+.product-card:nth-child(5){
+    border-bottom: 3px solid var(--color5);
+}
+.product-card:nth-child(6){
+    border-bottom: 3px solid var(--color6);
+}
+.product-card:nth-child(7){
+    border-bottom: 3px solid var(--color7);
+}
+.product-card:nth-child(8){
+    border-bottom: 3px solid var(--color8);
+}
+.product-card:nth-child(9){
+    border-bottom: 3px solid var(--color9);
+}
+.product-card:nth-child(10){
+    border-bottom: 3px solid var(--color10);
+}
+.product-card:nth-child(11){
+    border-bottom: 3px solid var(--color11);
+}
+.product-card:nth-child(12){
+    border-bottom: 3px solid var(--color12);
+}
+
+
+@media only screen and (max-width : 1080px){
+    .products-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
 }
 
 @media only screen and (max-width:750px){
@@ -18,6 +237,25 @@
     .para{
         font-size: 1.4rem;
         line-height: 2.2rem;
+    }
+    .products-container{
+        width: 100%;
+        grid-template-columns: auto;
+        gap: 20px 0px;
+    }
+    .product-card picture{
+        height: 250px;
+    }
+    .pro-crd-info{
+        padding: 15px 10px;
+    }
+    .crd-title{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+    .crd-link{
+        font-size: 1.2rem;
+        line-height: 1.8rem;
     }
 }
 

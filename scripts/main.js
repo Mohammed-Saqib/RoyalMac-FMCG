@@ -66,3 +66,40 @@ window.addEventListener('scroll', function (e) {
 //         visible.isIntersecting === true ? proImgview.classList.add('p-left-anim') : proImgview.classList.remove('p-left-anim');
 //   }, options);
 //   observer.observe(productContainer);
+
+
+// ====================================== * Testimonials * ======================================= -->
+$(document).ready(function () {
+    $('.testimonials-container').owlCarousel({
+        margin: 20,
+        responsiveClass: true,
+        loop: true,
+        autoplay: true,
+        dots: true,
+        nav: false,
+        stagePadding: 10,
+        autoplayHoverPause: false,
+        autoplayTimeout: 4000,
+        smartSpeed: 4000,
+        responsive: {
+            150: {
+                items: 1,
+            },
+            300: {
+                items: 1,
+            },
+            450: {
+                items: 1,
+            },
+            600: {
+                items: 1,
+            },
+            750: {
+                items: 2,
+            },
+            1000: {
+                items: 2,
+            }
+        }
+    });
+});
