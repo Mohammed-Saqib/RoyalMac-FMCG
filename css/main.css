@@ -90,7 +90,7 @@ body{
     font-size: 4rem;
     text-transform: uppercase;
     line-height: 0;
-    text-align: center;
+    text-align: center; 
 }
 .p-heading{
     font-size: 3rem;
@@ -101,6 +101,62 @@ body{
     color: rgba(102,0,153,1);
     position: relative;
     z-index: 2;
+
+    /* background-image: linear-gradient( 135deg, #ABDCFF 10%, rgba(102,0,153,1) 100%) !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; */
+}
+
+.go-up{
+    position: fixed;
+    right: 2%;
+    bottom: calc(5% - 30px);
+    z-index: 10;
+    width: 40px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    padding-top: 12px;
+    row-gap: 20px;
+    border-radius: 5px;
+    background: linear-gradient( 135deg, #ABDCFF 10%, rgba(102,0,153,1) 100%);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1), 0 0 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
+.activeGoUp{
+    cursor: pointer;
+    bottom: 5%;
+    opacity: 1;
+    visibility: visible;
+}
+.activeGoUp:active{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+.go-up:hover{
+    background: linear-gradient( 135deg, #43CBFF 10%, rgba(102,0,153,1) 100%);
+}
+.go-up #arrowUp{
+    transition: transform  0.2s ease-in-out;
+    -moz-transition: transform  0.2s ease-in-out;
+    -webkit-transition: transform  0.2s ease-in-out;
+    -o-transition: transform  0.2s ease-in-out;
+}
+.go-up:hover #arrowUp{
+   transform: translateY(-40px) !important;
+   -moz-transform: translateY(-40px) !important;
+   -webkit-transform: translateY(-40px) !important;
+   -o-transform: translateY(-40px) !important;
 }
 
 @media only screen and (max-width:750px){
@@ -112,6 +168,9 @@ body{
     }
     .p-heading{
         font-size: 2.5rem;
+    }
+    .go-up{
+        right: 4%;
     }
    
 }

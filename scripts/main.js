@@ -33,13 +33,21 @@ $(document).ready(function () {
     });
 });
 
+// ==================================Menu Bar Color Change On Scroll Coding=======================================//
 window.addEventListener('scroll', function (e) { 
     e.preventDefault();
+    this.scrollY > 20 ? document.querySelector('.go-up').classList.add('activeGoUp') : document.querySelector('.go-up').classList.remove('activeGoUp')
     this.scrollY > 175 ? document.querySelector('.navButton').classList.add('act-scrl-bg') : document.querySelector('.navButton').classList.remove('act-scrl-bg')
  })
 
 
- //-----------------------------------Carousel Animation On Images As Slides----------------------------------//
+// ==================================Go UP Coding=======================================//
+ document.querySelector('.go-up').addEventListener('click', function (e) {
+     e.preventDefault();
+     window.scrollTo(0 , 0);
+ })
+
+ //===================================Carousel Animation On Images As Slides==================================//
 // function startAnimation() {
 //     const tl = gsap.timeline({repeat: -1, defaults: { duration: 4 } })
 //     tl

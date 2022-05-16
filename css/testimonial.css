@@ -76,3 +76,9 @@
 .owl-dot.active{
     background: rgba(102,0,153,1) !important;
 }
+
+@media screen and (max-width:450px) {
+    .double-quotes::after{
+        vertical-align: -25px;
+    }
+}
