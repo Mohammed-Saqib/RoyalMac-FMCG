@@ -4,9 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background: url(../images/header-bg.webp) no-repeat; */
   background: url(../images/testimonial.jpg) no-repeat;
-  background-position: 0px  -100px;
+  background-position: center center;
+  background-size: cover;
   background-attachment: fixed;
   position: relative;
   overflow: hidden !important;
@@ -21,6 +21,15 @@ left: 0;
 right: 0;
 animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
 z-index: 2;
+}
+
+@keyframes bckColorChange {
+  /* 0%{background-color: rgba(102,0,153,0.9);} */
+  0%{background-color: rgba(11, 44, 11,.9);}
+  25%{background-color: rgba(17,20,235,.9);}
+  50%{background-color: rgba(255,14,20,.9);}
+  75%{background-color: rgba(3,150,255,.9);}
+  100%{background-color: rgba(223, 0, 255,.9);}
 }
 
 .slide{
@@ -63,15 +72,64 @@ z-index: 2;
   }
 }
 
-@keyframes bckColorChange {
-  /* 0%{background-color: rgba(102,0,153,0.9);} */
-  0%{background-color: rgba(11, 44, 11,.9);}
-  25%{background-color: rgba(17,20,235,.9);}
-  50%{background-color: rgba(255,14,20,.9);}
-  75%{background-color: rgba(3,150,255,.9);}
-  100%{background-color: rgba(223, 0, 255,.9);}
+.loader{
+  position: absolute;
+  width: 900px;
+  height: 900px;
+}
+.loader span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(calc(36deg * var(--i)));
+  -webkit-transform: rotate(calc(36deg * var(--i)));
+  -moz-transform: rotate(calc(36deg * var(--i)));
+  -o-transform: rotate(calc(36deg * var(--i)));
 }
 
+.loader span::before{
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: calc(5px * var(--i)); height: calc(5px * var(--i));
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 20px #fff,
+  -30px -30px 0 #fff,
+  -30px -30px 20px #fff,
+   30px 30px 0 #fff,
+   30px 30px 20px #fff,
+   30px -30px 0 #fff,
+   30px -30px 20px #fff,
+  -30px 30px 0 #fff,
+  -30px 30px 20px #fff;
+  animation: animate calc(5s * var(--i)) linear infinite;
+  animation-delay: calc(-0.25s * var(--i));
+  transform-origin: calc(13px * var(--i));
+  transition: 2s;
+}
+@keyframes animate {
+  0%{
+    transform: rotate(0deg);
+    /* filter: hue-rotate(0deg); */
+  }
+  100%{
+    transform: rotate(360deg);
+    /* filter: hue-rotate(360deg); */
+    transform-origin: 400px;
+    box-shadow: 0 0 20px #fff,
+  -200px -200px 0 #fff,
+  -200px -200px 20px #fff,
+   200px 200px 0 #fff,
+   200px 200px 20px #fff,
+   200px -200px 0 #fff,
+   200px -200px 20px #fff,
+  -200px 200px 0 #fff,
+  -200px 200px 20px #fff;
+  }
+}
 .carousel{
       margin-top: 100px;
       width: 85%;
@@ -134,15 +192,15 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
   100%{fill: rgba(223, 0, 255,1);}
 }
   
-  .left-carousel{
-      width: 60%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      row-gap: 10px;
+.left-carousel{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
   }
-  
+
   .c-heading h1{
       font-family: serif;
       font-weight: 700;
@@ -197,19 +255,19 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
   }
   @-webkit-keyframes up-down {
       0% {
-        transform: translateY(10px);
+        transform: translateY(20px);
       }
       100% {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
       }
     }
     
     @keyframes up-down {
       0% {
-        transform: translateY(10px);
+        transform: translateY(20px);
       }
       100% {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
       }
     }
   
@@ -328,12 +386,13 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
           line-height: 1.6rem;
           text-align: justify;
       }
+      .loader{
+        width: 300px;
+        height: 300px;
+      }
   }
   
     @media screen and (max-width: 600px) {
-      .header-container{
-        background-position: center;
-      }
       .c-heading h1{
           font-size: 1.4rem;
           line-height: 1.8rem;

@@ -5,7 +5,6 @@ let stopingIntervals;
 const navButton = document.querySelector('.navButton');
 $(document).ready(function () {
     $("#menu-icon").click(function () {
-        console.log("hellow orld");
         $(".dropdown").toggleClass("active-dropdown")
         if (stopingIntervals) {
             clearTimeout(stopingIntervals);

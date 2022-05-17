@@ -23,7 +23,19 @@
     flex-direction: column;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
     overflow: hidden;
+}
+.product-card::after{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    content: "";
+    width: 100%;
+    height: 3.5px !important;
+    background-size: 400% auto;
+    transition: 0.5s;
 }
 .product-card:hover{  
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -99,7 +111,7 @@
     transform: scaleX(0);
     transition: transform .3s ease-in-out;
 }
-
+ 
 .product-card:nth-child(1) .crd-link{
     color : var(--color1);
 }
@@ -145,6 +157,7 @@
     transform: scaleX(0.5);
     transform-origin: left;
 }
+
 .product-card:nth-child(1) .crd-link::before , .product-card:nth-child(1) .crd-link::after{
     background-color: var(--color1);
 }
@@ -181,41 +194,60 @@
 .product-card:nth-child(12) .crd-link::before , .product-card:nth-child(12) .crd-link::after{
     background-color: var(--color12);
 }
-.product-card:nth-child(1){
-    border-bottom: 3px solid var(--color1);
+
+.product-card:nth-child(1)::after{
+    background-image: linear-gradient(to right, var(--color1) 0%, #ABDCFF  51%, var(--color1)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(2){
-    border-bottom: 3px solid var(--color2);
+.product-card:nth-child(2)::after{
+    background-image: linear-gradient(to right, var(--color2) 0%, #ABDCFF  51%, var(--color2)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(3){
-    border-bottom: 3px solid var(--color3);
+.product-card:nth-child(3)::after{
+    background-image: linear-gradient(to right, var(--color3) 0%, #ABDCFF  51%, var(--color3)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(4){
-    border-bottom: 3px solid var(--color4);
+.product-card:nth-child(4)::after{
+    background-image: linear-gradient(to right, var(--color4) 0%, #ABDCFF  51%, var(--color4)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(5){
-    border-bottom: 3px solid var(--color5);
+.product-card:nth-child(5)::after{
+    background-image: linear-gradient(to right, var(--color5) 0%, #ABDCFF  51%, var(--color5)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(6){
-    border-bottom: 3px solid var(--color6);
+.product-card:nth-child(6)::after{
+    background-image: linear-gradient(to right, var(--color6) 0%, #ABDCFF  51%, var(--color6)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(7){
-    border-bottom: 3px solid var(--color7);
+.product-card:nth-child(7)::after{
+    background-image: linear-gradient(to right, var(--color7) 0%, #ABDCFF  51%, var(--color7)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(8){
-    border-bottom: 3px solid var(--color8);
+.product-card:nth-child(8)::after{
+    background-image: linear-gradient(to right, var(--color8) 0%, #ABDCFF  51%, var(--color8)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(9){
-    border-bottom: 3px solid var(--color9);
+.product-card:nth-child(9)::after{
+    background-image: linear-gradient(to right, var(--color9) 0%, #ABDCFF  51%, var(--color9)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(10){
-    border-bottom: 3px solid var(--color10);
+.product-card:nth-child(10)::after{
+    background-image: linear-gradient(to right, var(--color10) 0%, #ABDCFF  51%, var(--color10)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(11){
-    border-bottom: 3px solid var(--color11);
+.product-card:nth-child(11)::after{
+    background-image: linear-gradient(to right, var(--color11) 0%, #ABDCFF  51%, var(--color11)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(12){
-    border-bottom: 3px solid var(--color12);
+.product-card:nth-child(12)::after{
+    background-image: linear-gradient(to right, var(--color12) 0%, #ABDCFF  51%, var(--color12)  100%) !important;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+}
+
+@keyframes shades {
+    100%{
+        background-position: right center;
+    }
 }
 
 
