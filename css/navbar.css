@@ -24,10 +24,10 @@
     align-items: center;
     justify-content: center;
     outline: none;
-    animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
-    -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
-    -webkit-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
-    -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
+    animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 10s;
+    -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 10s;
+    -webkit-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 10s;
+    -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 10s;
 }
 .navLogo img{
     z-index: 1;
@@ -251,7 +251,10 @@
     -webkit-transition: clip-path 0.5s ease;
     -moz-transition: clip-path 0.5s ease;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    animation: bckColorChange 30s ease-in-out infinite alternate-reverse both;
+    animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 10s;
+    -webkit-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 10s;
+    -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 10s;
+    -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 10s;
     z-index: 12;
 
 }

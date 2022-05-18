@@ -14,8 +14,9 @@
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 15px;
     padding: 10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
+
 .product-card{
     width: 100%;
     height: 100% !important;
@@ -40,20 +41,88 @@
 .product-card:hover{  
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
-.product-card picture{
-    width: 100%;
-    height: 350px;
-    cursor: pointer;
-    overflow: hidden;
+.circle{
+    align-self: flex-start;
+    position: relative;
+    width: calc(100% + 100px);
+    aspect-ratio: 1 / 1;
+    background-color: var(--whiteColor);
+    clip-path: circle();
+    transform: translate(-50px , -150px);
+    z-index: 1;
 }
-.product-card picture img{
+.circle::before{
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -7px;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: 0 0 0 20px var(--color1);
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.product-card:nth-child(1) .circle::before{
+   box-shadow: 0 0 0 20px var(--color1);
+}
+.product-card:nth-child(2) .circle::before{
+   box-shadow: 0 0 0 20px var(--color2);
+}
+.product-card:nth-child(3) .circle::before{
+   box-shadow: 0 0 0 20px var(--color3);
+}
+.product-card:nth-child(4) .circle::before{
+   box-shadow: 0 0 0 20px var(--color4);
+}
+.product-card:nth-child(5) .circle::before{
+   box-shadow: 0 0 0 20px var(--color5);
+}
+.product-card:nth-child(6) .circle::before{
+   box-shadow: 0 0 0 20px var(--color6);
+}
+.product-card:nth-child(7) .circle::before{
+   box-shadow: 0 0 0 20px var(--color7);
+}
+.product-card:nth-child(8) .circle::before{
+   box-shadow: 0 0 0 20px var(--color8);
+}
+.product-card:nth-child(9) .circle::before{
+   box-shadow: 0 0 0 20px var(--color9);
+}
+.product-card:nth-child(10) .circle::before{
+   box-shadow: 0 0 0 20px var(--color10);
+}
+.product-card:nth-child(11) .circle::before{
+   box-shadow: 0 0 0 20px var(--color11);
+}
+.product-card:nth-child(12) .circle::before{
+   box-shadow: 0 0 0 20px var(--color12);
+}
+
+.circle picture{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    width: calc(100% - 99px);
+    height:calc(100% - 100px);
+    background: yellow;
+    z-index: 1;
+}
+.circle picture img{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-position: center;
-    object-fit: cover !important;
+    object-fit: cover;
 }
 .pro-crd-info{
-    padding: 20px 15px;
+    margin-top: -150px;
+    padding: 0px 15px 20px 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
