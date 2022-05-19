@@ -111,7 +111,7 @@ body{
 .go-up{
     position: fixed;
     right: 2%;
-    bottom: calc(5% - 30px);
+    bottom: calc(3.3% - 30px);
     z-index: 10;
     width: 40px;
     height: 45px;
@@ -132,7 +132,7 @@ body{
 }
 .activeGoUp{
     cursor: pointer;
-    bottom: 3%;
+    bottom: 3.3%;
     opacity: 1;
     visibility: visible;
 }
