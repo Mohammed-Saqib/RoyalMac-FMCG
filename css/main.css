@@ -132,7 +132,7 @@ body{
 }
 .activeGoUp{
     cursor: pointer;
-    bottom: 3.3%;
+    bottom: 3.5%;
     opacity: 1;
     visibility: visible;
 }
