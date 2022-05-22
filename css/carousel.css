@@ -34,7 +34,7 @@ transition: background-color 1.2s ease-in-out;
   25%{background-color: rgba(17,20,235,.9);}
   50%{background-color: rgba(255,14,20,.9);}
   70%{background-color: rgba(3,150,255,.9);}
-  100%{background-color: rgba(11, 44, 11,.97);}
+  100%{background-color: rgba(11, 44, 11,.9);}
 }
 
 .slide{
@@ -205,7 +205,7 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
     -o-transition: background-color .4s ease-in-out;
   }
   .left-carousel a:hover{
-    background-color: var(--whiteColor);
+    background-color: rgba(255, 255, 255, .7);
     color: rgba(102,0,153,1);
     border: 1px solid rgba(102,0,153,1);
   }

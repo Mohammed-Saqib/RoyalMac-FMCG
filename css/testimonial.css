@@ -46,8 +46,12 @@
 }
 
 .testi-crd-profile img{
-    width: 90px !important;
+    max-width: 90px;
+    height: 90px;
     border-radius: 50%;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
     margin: -4rem 0 0 4rem;
     position: relative;
     z-index: 2;

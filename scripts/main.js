@@ -46,35 +46,6 @@ window.addEventListener('scroll', function (e) {
      window.scrollTo(0 , 0);
  })
 
- //===================================Carousel Animation On Images As Slides==================================//
-// function startAnimation() {
-//     const tl = gsap.timeline({repeat: -1, defaults: { duration: 4 } })
-//     tl
-//         .from('.slide1', { opacity: 0, ease: 'power3.inOut' })
-//         .from('.slide2', { opacity: 0, ease: 'power3.inOut' })
-//         .from('.slide3', { opacity: 0, ease: 'power3.inOut' })
-//         .from('.slide4', { opacity: 0, ease: 'power3.inOut' })
-// }
-
-// window.addEventListener('load', startAnimation());
-
-// ====================================== * Product * ======================================= -->
-
-// let productContainer = document.querySelector('.product-container'); 
-// let proImgview = document.querySelector('.p-left'); // p-left-anim
-// let options = {
-//     root: null,
-//     // rootMargin: '-300px',
-//     rootMargin: '0px',
-//     threshold: 0.0,
-//   }
-//   let observer = new IntersectionObserver((entries) => {
-//         let visible = entries[0];
-//         visible.isIntersecting === true ? proImgview.classList.add('p-left-anim') : proImgview.classList.remove('p-left-anim');
-//   }, options);
-//   observer.observe(productContainer);
-
-
 // ====================================== * Testimonials * ======================================= -->
 $(document).ready(function () {
     $('.testimonials-container').owlCarousel({
