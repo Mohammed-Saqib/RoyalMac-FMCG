@@ -53,7 +53,7 @@ $(document).ready(function () {
         responsiveClass: true,
         loop: true,
         autoplay: true,
-        dots: true,
+        dots: false,
         nav: false,
         stagePadding: 10,
         autoplayHoverPause: false,
