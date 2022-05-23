@@ -103,7 +103,15 @@
     background-attachment: fixed;
     border-radius: 5px;
 }
-
+.info-sub-heading{
+    background-color: #F4F4F4;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: justify;
+    margin: 15px 0px;
+    font-weight: 600;
+}
 .info-para{
     background-color: #F4F4F4;
     padding: 10px 20px;
@@ -113,12 +121,12 @@
     margin: 15px 0px;
 }
 
-.info-para::before{
+/* .info-para::before{
     content: "\201C";
     font-size: 4rem;
     font-weight: 800;
     color: rgba(0, 0, 0, 0.4);
-    vertical-align: -16px;
+    vertical-align: -12px;
 }
 
 .info-para::after{
@@ -127,7 +135,7 @@
     font-weight: 800;
     color: rgba(0, 0, 0, 0.4);
     vertical-align: -16px;
-}
+} */
 
 .info-nav-btn{
     display: none;
@@ -155,6 +163,12 @@
     .info-body{
         width: 90%;
     }
+    .info-sub-heading{
+        padding: 10px 10px;
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+    }
+
     .info-para{
         padding: 10px 10px;
         font-size: 1.4rem;
@@ -238,6 +252,11 @@
     .info-body{
         width: 95%;
     }
+    .info-sub-heading{
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+
     .info-para{
         font-size: 1.4rem;
         line-height: 2.6rem;
