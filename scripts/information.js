@@ -25,3 +25,17 @@ window.addEventListener('scroll', function (e) {
      e.preventDefault();
      window.scrollTo(0 , 0);
  })
+
+ // ==================================Product Quote Coding=======================================//
+ let inputField = document.querySelectorAll('.inputField')
+ let labelMid = document.querySelectorAll('.form-group label');
+ for (let i = 0; i < inputField.length; i++) {
+     inputField[i].addEventListener('focus', function(){
+         labelMid[i].classList.add('label');
+         inputField[i].addEventListener('blur', function (e) { 
+            if (e.target.value.length === 0) {
+                labelMid[i].classList.remove('label');
+            }
+          })
+     })     
+ }
