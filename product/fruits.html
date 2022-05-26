@@ -133,9 +133,13 @@
                             <label for="cName">Company Name</label>
                             <input class="inputField" type="text" name="cName" id="cName" autocomplete="off" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group-country">
+                            <select name="sCountry" id="sCountry" required><option value="">Select Country</option><!-- Options tag are inserted from JavaScript --></select>
+                            <div class="form-group-number">
+                            <span id="phoneCode">+0000</span>
                             <label for="pNumber">Contact Number</label>
-                            <input class="inputField" type="text" name="pNumber" id="pNumber" autocomplete="off" required>
+                            <input class="inputFieldContact" type="text" name="pNumber" id="pNumber" autocomplete="off" required>
+                           </div>
                         </div>
                         <div class="form-group">
                             <label for="pEmail">Email</label>

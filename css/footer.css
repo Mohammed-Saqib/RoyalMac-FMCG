@@ -53,14 +53,12 @@
 
 @media screen and (max-width: 750px) {
     .footer-links{
-        outline: 1px solid;
         width: 90%;
     }
 }
 
 @media screen and (max-width: 450px) {
     .footer-links{
-        outline: 1px solid;
         width: 95%;
     }
     .footer-links *{

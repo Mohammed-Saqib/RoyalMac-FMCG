@@ -39,3 +39,17 @@ window.addEventListener('scroll', function (e) {
           })
      })     
  }
+
+ let inputFieldContact = document.querySelector('.inputFieldContact')
+ let labelMidC = document.querySelector('.form-group-number label');
+ let phoneCode = document.querySelector('.form-group-number span');
+ inputFieldContact.addEventListener('focus', function(){
+    labelMidC.classList.add('labelC');
+    phoneCode.classList.add('phoneCode');
+    inputFieldContact.addEventListener('blur', function (e) { 
+       if (e.target.value.length === 0) {
+           labelMidC.classList.remove('labelC');
+           phoneCode.classList.remove('phoneCode');
+       }
+     })
+})     
