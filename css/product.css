@@ -231,40 +231,40 @@
     transition: transform .3s ease-in-out;
 }
  
-.product-card:nth-child(1) .crd-link{
+.cat-1:nth-child(1) .crd-link, .cat-4:nth-child(1) .crd-link{
     color : var(--color1);
 }
-.product-card:nth-child(2) .crd-link{
+.cat-1:nth-child(2) .crd-link, .cat-4:nth-child(2) .crd-link{
     color : var(--color2);
 }
-.product-card:nth-child(3) .crd-link{
+.cat-1:nth-child(3) .crd-link, .cat-4:nth-child(3) .crd-link{
     color : var(--color3);
 }
-.product-card:nth-child(4) .crd-link{
+.cat-1:nth-child(4) .crd-link, .cat-4:nth-child(4) .crd-link{
     color : var(--color4);
 }
-.product-card:nth-child(5) .crd-link{
+.cat-2:nth-child(1) .crd-link, .cat-5:nth-child(1) .crd-link{
     color : var(--color5);
 }
-.product-card:nth-child(6) .crd-link{
+.cat-2:nth-child(2) .crd-link, .cat-5:nth-child(2) .crd-link{
     color : var(--color6);
 }
-.product-card:nth-child(7) .crd-link{
+.cat-2:nth-child(3) .crd-link, .cat-5:nth-child(3) .crd-link{
     color : var(--color7);
 }
-.product-card:nth-child(8) .crd-link{
+.cat-2:nth-child(4) .crd-link, .cat-5:nth-child(4) .crd-link{
     color : var(--color8);
 }
-.product-card:nth-child(9) .crd-link{
+.cat-3:nth-child(1) .crd-link, .cat-6:nth-child(1) .crd-link{
     color : var(--color9);
 }
-.product-card:nth-child(10) .crd-link{
+.cat-3:nth-child(2) .crd-link, .cat-6:nth-child(2) .crd-link{
     color : var(--color10);
 }
-.product-card:nth-child(11) .crd-link{
+.cat-3:nth-child(3) .crd-link, .cat-6:nth-child(3) .crd-link{
     color : var(--color11);
 }
-.product-card:nth-child(12) .crd-link{
+.cat-3:nth-child(4) .crd-link, .cat-6:nth-child(4) .crd-link{
     color : var(--color12);
 }
 
@@ -277,40 +277,40 @@
     transform-origin: left;
 }
 
-.product-card:nth-child(1) .crd-link::before , .product-card:nth-child(1) .crd-link::after{
+.cat-1:nth-child(1) .crd-link::before , .cat-1:nth-child(1) .crd-link::after, .cat-4:nth-child(1) .crd-link::before , .cat-4:nth-child(1) .crd-link::after{
     background-color: var(--color1);
 }
-.product-card:nth-child(2) .crd-link::before , .product-card:nth-child(2) .crd-link::after{
+.cat-1:nth-child(2) .crd-link::before , .cat-1:nth-child(2) .crd-link::after, .cat-4:nth-child(2) .crd-link::before , .cat-4:nth-child(2) .crd-link::after{
     background-color: var(--color2);
 }
-.product-card:nth-child(3) .crd-link::before , .product-card:nth-child(3) .crd-link::after{
+.cat-1:nth-child(3) .crd-link::before , .cat-1:nth-child(3) .crd-link::after, .cat-4:nth-child(3) .crd-link::before , .cat-4:nth-child(3) .crd-link::after{
     background-color: var(--color3);
 }
-.product-card:nth-child(4) .crd-link::before , .product-card:nth-child(4) .crd-link::after{
+.cat-1:nth-child(4) .crd-link::before , .cat-1:nth-child(4) .crd-link::after, .cat-4:nth-child(4) .crd-link::before , .cat-4:nth-child(4) .crd-link::after{
     background-color: var(--color4);
 }
-.product-card:nth-child(5) .crd-link::before , .product-card:nth-child(5) .crd-link::after{
+.cat-2:nth-child(1) .crd-link::before , .cat-2:nth-child(1) .crd-link::after, .cat-5:nth-child(1) .crd-link::before , .cat-5:nth-child(1) .crd-link::after{
     background-color: var(--color5);
 }
-.product-card:nth-child(6) .crd-link::before , .product-card:nth-child(6) .crd-link::after{
+.cat-2:nth-child(2) .crd-link::before , .cat-2:nth-child(2) .crd-link::after, .cat-5:nth-child(2) .crd-link::before , .cat-5:nth-child(2) .crd-link::after{
     background-color: var(--color6);
 }
-.product-card:nth-child(7) .crd-link::before , .product-card:nth-child(7) .crd-link::after{
+.cat-2:nth-child(3) .crd-link::before , .cat-2:nth-child(3) .crd-link::after, .cat-5:nth-child(3) .crd-link::before , .cat-5:nth-child(3) .crd-link::after{
     background-color: var(--color7);
 }
-.product-card:nth-child(8) .crd-link::before , .product-card:nth-child(8) .crd-link::after{
+.cat-2:nth-child(4) .crd-link::before , .cat-2:nth-child(4) .crd-link::after, .cat-5:nth-child(4) .crd-link::before , .cat-5:nth-child(4) .crd-link::after{
     background-color: var(--color8);
 }
-.product-card:nth-child(9) .crd-link::before , .product-card:nth-child(9) .crd-link::after{
+.cat-3:nth-child(1) .crd-link::before , .cat-3:nth-child(1) .crd-link::after, .cat-6:nth-child(1) .crd-link::before , .cat-6:nth-child(1) .crd-link::after{
     background-color: var(--color9);
 }
-.product-card:nth-child(10) .crd-link::before , .product-card:nth-child(10) .crd-link::after{
+.cat-3:nth-child(2) .crd-link::before , .cat-3:nth-child(2) .crd-link::after, .cat-6:nth-child(2) .crd-link::before , .cat-6:nth-child(2) .crd-link::after{
     background-color: var(--color10);
 }
-.product-card:nth-child(11) .crd-link::before , .product-card:nth-child(11) .crd-link::after{
+.cat-3:nth-child(3) .crd-link::before , .cat-3:nth-child(3) .crd-link::after, .cat-6:nth-child(3) .crd-link::before , .cat-6:nth-child(3) .crd-link::after{
     background-color: var(--color11);
 }
-.product-card:nth-child(12) .crd-link::before , .product-card:nth-child(12) .crd-link::after{
+.cat-3:nth-child(4) .crd-link::before , .cat-3:nth-child(4) .crd-link::after, .cat-6:nth-child(4) .crd-link::before , .cat-6:nth-child(4) .crd-link::after{
     background-color: var(--color12);
 }
 
