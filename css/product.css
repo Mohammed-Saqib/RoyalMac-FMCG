@@ -67,40 +67,40 @@
     z-index: 2;
 }
 
-.product-card:nth-child(1) .circle::before{
+.cat-1:nth-child(1) .circle::before, .cat-4:nth-child(1) .circle::before{
    box-shadow: 0 0 0 20px var(--color1);
 }
-.product-card:nth-child(2) .circle::before{
+.cat-1:nth-child(2) .circle::before, .cat-4:nth-child(2) .circle::before{
    box-shadow: 0 0 0 20px var(--color2);
 }
-.product-card:nth-child(3) .circle::before{
+.cat-1:nth-child(3) .circle::before, .cat-4:nth-child(3) .circle::before{
    box-shadow: 0 0 0 20px var(--color3);
 }
-.product-card:nth-child(4) .circle::before{
+.cat-1:nth-child(4) .circle::before, .cat-4:nth-child(4) .circle::before{
    box-shadow: 0 0 0 20px var(--color4);
 }
-.product-card:nth-child(5) .circle::before{
+.cat-2:nth-child(1) .circle::before, .cat-5:nth-child(1) .circle::before{
    box-shadow: 0 0 0 20px var(--color5);
 }
-.product-card:nth-child(6) .circle::before{
+.cat-2:nth-child(2) .circle::before, .cat-5:nth-child(2) .circle::before{
    box-shadow: 0 0 0 20px var(--color6);
 }
-.product-card:nth-child(7) .circle::before{
+.cat-2:nth-child(3) .circle::before, .cat-5:nth-child(3) .circle::before{
    box-shadow: 0 0 0 20px var(--color7);
 }
-.product-card:nth-child(8) .circle::before{
+.cat-2:nth-child(4) .circle::before, .cat-5:nth-child(4) .circle::before{
    box-shadow: 0 0 0 20px var(--color8);
 }
-.product-card:nth-child(9) .circle::before{
+.cat-3:nth-child(1) .circle::before, .cat-6:nth-child(1) .circle::before{
    box-shadow: 0 0 0 20px var(--color9);
 }
-.product-card:nth-child(10) .circle::before{
+.cat-3:nth-child(2) .circle::before, .cat-6:nth-child(2) .circle::before{
    box-shadow: 0 0 0 20px var(--color10);
 }
-.product-card:nth-child(11) .circle::before{
+.cat-3:nth-child(3) .circle::before, .cat-6:nth-child(3) .circle::before{
    box-shadow: 0 0 0 20px var(--color11);
 }
-.product-card:nth-child(12) .circle::before{
+.cat-3:nth-child(4) .circle::before, .cat-6:nth-child(4) .circle::before{
    box-shadow: 0 0 0 20px var(--color12);
 }
 
@@ -128,40 +128,40 @@
     -moz-animation: zoominOut 5s infinite ease-in-out alternate-reverse both;
     -o-animation: zoominOut 5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(1) .circle picture img{
-    animation-delay: -20s !important;
+.cat-1:nth-child(1) .circle picture img, .cat-4:nth-child(1) .circle picture img{
+    animation-delay: -48s !important;
  }
- .product-card:nth-child(2) .circle picture img{
-    animation-delay: -.13 !important;
+ .cat-1:nth-child(2) .circle picture img, .cat-4:nth-child(2) .circle picture img{
+    animation-delay: -.4 !important;
  }
- .product-card:nth-child(3) .circle picture img{
+ .cat-1:nth-child(3) .circle picture img, .cat-4:nth-child(3) .circle picture img{
+    animation-delay: -.12s !important;
+ }
+ .cat-1:nth-child(4) .circle picture img, .cat-4:nth-child(4) .circle picture img{
+    animation-delay: -.18s !important;
+ }
+ .cat-2:nth-child(1) .circle picture img, .cat-5:nth-child(1) .circle picture img{
     animation-delay: -.9s !important;
  }
- .product-card:nth-child(4) .circle picture img{
-    animation-delay: -.13s !important;
+ .cat-2:nth-child(2) .circle picture img, .cat-5:nth-child(2) .circle picture img{
+    animation-delay: -.5s !important;
  }
- .product-card:nth-child(5) .circle picture img{
+ .cat-2:nth-child(3) .circle picture img, .cat-5:nth-child(3) .circle picture img{
+    animation-delay: -.17s !important;
+ }
+ .cat-2:nth-child(4) .circle picture img, .cat-5:nth-child(4) .circle picture img{
+    animation-delay: -.10s !important;
+ }
+ .cat-3:nth-child(1) .circle picture img, .cat-6:nth-child(1) .circle picture img{
+    animation-delay: -.29s !important;
+ }
+ .cat-3:nth-child(2) .circle picture img, .cat-6:nth-child(2) .circle picture img{
     animation-delay: -.23s !important;
  }
- .product-card:nth-child(6) .circle picture img{
-    animation-delay: -.9s !important;
- }
- .product-card:nth-child(7) .circle picture img{
-    animation-delay: -.2s !important;
- }
- .product-card:nth-child(8) .circle picture img{
-    animation-delay: -.6s !important;
- }
- .product-card:nth-child(9) .circle picture img{
-    animation-delay: -.33s !important;
- }
- .product-card:nth-child(10) .circle picture img{
-    animation-delay: -.23s !important;
- }
- .product-card:nth-child(11) .circle picture img{
+ .cat-3:nth-child(3) .circle picture img, .cat-6:nth-child(3) .circle picture img{
     animation-delay: -.22s !important;
  }
- .product-card:nth-child(12) .circle picture img{
+ .cat-3:nth-child(4) .circle picture img, .cat-6:nth-child(4) .circle picture img{
     animation-delay: -.17s !important;
  }
 @keyframes zoominOut {
@@ -314,51 +314,51 @@
     background-color: var(--color12);
 }
 
-.product-card:nth-child(1)::after{
+.cat-1:nth-child(1)::after, .cat-4:nth-child(1)::after{
     background-image: linear-gradient(to right, var(--color1) 0%, #ABDCFF  51%, var(--color1)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(2)::after{
+.cat-1:nth-child(2)::after, .cat-4:nth-child(2)::after{
     background-image: linear-gradient(to right, var(--color2) 0%, #ABDCFF  51%, var(--color2)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(3)::after{
+.cat-1:nth-child(3)::after, .cat-4:nth-child(3)::after{
     background-image: linear-gradient(to right, var(--color3) 0%, #ABDCFF  51%, var(--color3)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(4)::after{
+.cat-1:nth-child(4)::after, .cat-4:nth-child(4)::after{
     background-image: linear-gradient(to right, var(--color4) 0%, #ABDCFF  51%, var(--color4)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(5)::after{
+.cat-2:nth-child(1)::after, .cat-5:nth-child(1)::after{
     background-image: linear-gradient(to right, var(--color5) 0%, #ABDCFF  51%, var(--color5)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(6)::after{
+.cat-2:nth-child(2)::after, .cat-5:nth-child(2)::after{
     background-image: linear-gradient(to right, var(--color6) 0%, #ABDCFF  51%, var(--color6)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(7)::after{
+.cat-2:nth-child(3)::after, .cat-5:nth-child(3)::after{
     background-image: linear-gradient(to right, var(--color7) 0%, #ABDCFF  51%, var(--color7)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(8)::after{
+.cat-2:nth-child(4)::after, .cat-5:nth-child(4)::after{
     background-image: linear-gradient(to right, var(--color8) 0%, #ABDCFF  51%, var(--color8)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(9)::after{
+.cat-3:nth-child(1)::after, .cat-6:nth-child(1)::after{
     background-image: linear-gradient(to right, var(--color9) 0%, #ABDCFF  51%, var(--color9)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(10)::after{
+.cat-3:nth-child(2)::after, .cat-6:nth-child(2)::after{
     background-image: linear-gradient(to right, var(--color10) 0%, #ABDCFF  51%, var(--color10)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(11)::after{
+.cat-3:nth-child(3)::after, .cat-6:nth-child(3)::after{
     background-image: linear-gradient(to right, var(--color11) 0%, #ABDCFF  51%, var(--color11)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.product-card:nth-child(12)::after{
+.cat-3:nth-child(4)::after, .cat-6:nth-child(4)::after{
     background-image: linear-gradient(to right, var(--color12) 0%, #ABDCFF  51%, var(--color12)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
