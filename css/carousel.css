@@ -204,9 +204,8 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
     -o-transition: background-color .4s ease-in-out;
   }
   .left-carousel a:hover{
-    background-color: rgba(255, 255, 255, .7);
-    color: rgba(102,0,153,1);
-    border: 1px solid rgba(102,0,153,1);
+    background-color: rgba(102,0,153,.3);
+    border: 1px solid var(--whiteColor);
   }
   
   .right-carousel{
