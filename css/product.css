@@ -184,13 +184,15 @@
 .crd-title{
     font-size: 2rem;
     line-height: 2.5rem;
-    font-weight: 600;
+    font-weight: 800;
     text-transform: capitalize;
-    color: rgba(102,0,153,1);
+    font-family: king;
+    letter-spacing: 2px;
+    color: rgba(201,37,107,1);
     text-align: left;
 }
 .crd-title:hover{
-    color: var(--goldColor);
+    color: rgba(11, 44, 11,.6);
 }
 .crd-link{
     align-self: flex-start;

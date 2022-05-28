@@ -203,8 +203,8 @@
     z-index: 9;
 }
 .act-scrl-bg::before{
-    border: 5px solid rgba(17,20,235, 0.5);
-    background: rgba(17,20,235, 0.4);
+    border: 5px solid rgba(201,37,107,.8);
+    background: rgba(201,37,107,.8);
 }
 
 .stop-anim::before{

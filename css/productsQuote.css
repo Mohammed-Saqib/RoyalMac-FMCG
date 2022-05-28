@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 45px;
-    background: linear-gradient( 135deg, #ABDCFF 10%, rgba(102,0,153,1) 100%);
+    background: linear-gradient( 135deg,  rgba(22,22,22,1) 10%, rgba(255,20,175,1) 100% );
 }
 
 .info-nav{
@@ -25,7 +25,6 @@
     color: var(--whiteColor);
     font-size: 1.6rem;
     line-height: 2rem;
-    text-shadow: 0px 0px 1px var(--whiteColor);
     text-transform: capitalize;
     font-weight: 600;
     position: relative;
@@ -142,7 +141,7 @@
     line-height: 2rem;
     text-align: center;
     font-weight: 600;
-    color: rgba(102,0,153,1);
+    color: rgba(201,37,107,1);
     background: #F4F4F4;
     padding: 10px;
 }
@@ -179,7 +178,7 @@
     border-radius: 50%;
     display: grid;
     place-items: center;
-    background: linear-gradient( 135deg, #ABDCFF 10%, rgba(102,0,153,1) 100%);
+    background: linear-gradient( 135deg,  rgba(22,22,22,1) 10%, rgba(255,20,175,1) 100% );
 }
 .form-info-img svg path{
     fill: var(--whiteColor);
@@ -193,7 +192,7 @@
     line-height: 2rem;
     text-transform: capitalize;
     font-weight: 500;
-    color: rgba(102,0,153,1);
+    color: rgba(201,37,107,1);
 }
 .form-info-msg-exp{
     font-size: 1.4rem;
@@ -216,7 +215,7 @@
     font-weight: 500;
     text-transform: capitalize;
     text-align: left;
-    color: rgba(102,0,153,1);
+    color: rgba(201,37,107,1);
 }
 .form-group{
     width: 100%;
@@ -230,12 +229,13 @@
 }
 .form-group input, textarea{
     padding: 10px 15px;
-    border: 1.5px solid rgba(102,0,153,.8);
-    box-shadow: 0 0 5px rgba(102,0,153,.2), inset 0 0 5px rgba(0, 0, 0, .1);
+    border: 1.5px solid rgba(201,37,107,.5);
+    box-shadow: 0 0 5px rgba(102,0,153,.2);
     outline: none;
 }
 .inputField:focus, .form-group-country select:focus{
-    border:1.5px solid#ABDCFF !important;
+    border:1.5px solid rgba(201,37,107,1) !important;
+    box-shadow: 0 0 10px rgba(201,37,107,.3) !important;
 }
 .form-group textarea{
     resize: none;
@@ -255,8 +255,8 @@
 }
 .form-group-country select{
     width: 40%;
-    border: 1.5px solid rgba(102,0,153,1);
-    box-shadow: 0 0 5px rgba(102,0,153,.2), inset 0 0 5px rgba(0, 0, 0, .1);
+    border: 1.5px solid rgba(201,37,107,.5);
+    box-shadow: 0 0 5px rgba(102,0,153,.2);
     outline: none;
 }
 .form-group-number{
@@ -267,29 +267,29 @@
 .form-group-number span{
     width: 50px;
     background: var(--whiteColor);
-    border: 1.5px solid rgba(102,0,153,1);
+    border: 1.5px solid rgba(201,37,107,.5);
     border-right: none;
     padding-left: 2px;
 }
 .form-group-number input{
     width: calc( 100% - 50px);
     background: var(--whiteColor);
-    border: 1.5px solid rgba(102,0,153,1);
+    border: 1.5px solid rgba(201,37,107,.5);
     border-left: none;
     outline: none;
 }
 .form-group-number input:focus{
     border-left: none;
-    border-right: 1.5px solid#ABDCFF;
-    border-bottom: 1.5px solid#ABDCFF;
-    border-top: 1.5px solid#ABDCFF;
+    border-right: 1.5px solid rgba(201,37,107,1);
+    border-bottom: 1.5px solid rgba(201,37,107,1);
+    border-top: 1.5px solid rgba(201,37,107,1);
 }
 
 .phoneCode{
     border-right: none !important;
-    border-left: 1.5px solid#ABDCFF !important;
-    border-bottom: 1.5px solid#ABDCFF !important;
-    border-top: 1.5px solid#ABDCFF !important;
+    border-left: 1.5px solid rgba(201,37,107,.5) !important;
+    border-bottom: 1.5px solid rgba(201,37,107,.5) !important;
+    border-top: 1.5px solid rgba(201,37,107,.5) !important;
 }
 
 .form-group-number label{
@@ -308,7 +308,7 @@
     -o-transition: transform 0.3s ease-in-out;
 }
 .labelC{
-    color: rgba(102,0,153,1) !important;
+    color: rgba(201,37,107,1) !important;
     transform: translate(25px, -10px) scale(0.75) !important;
     -webkit-transform: translate(25px, -10px) scale(0.75) !important;
     -moz-transform: translate(25px, -10px) scale(0.75) !important;
@@ -324,9 +324,9 @@
     padding: 10px 20px;
     word-spacing: 2px;
     outline: none;
-    border: 1.5px solid rgba(102,0,153,.8);
-    background-color: var(--whiteColor);
-    color: rgba(102,0,153,1);
+    border: 1.5px solid var(--whiteColor);
+    background-image: linear-gradient( 135deg,  rgba(22,22,22,.9) 10%, rgba(255,20,175,1) 100% );
+    color: var(--whiteColor);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),  10px 10px 20px rgba(0, 0, 0, 0.1);
     transition: background-color .3s ease-in-out;
     -webkit-transition: background-color .3s ease-in-out;
@@ -334,8 +334,11 @@
     -o-transition: background-color .3s ease-in-out;
 }
 .form-group button:hover{
-    background-color: rgba(102,0,153,.8);
-    color:  var(--whiteColor);
+    background-image: linear-gradient( 135deg, rgba(255,20,175,1) 10%, rgba(22,22,22,.9) 100%);
+}
+.form-group button:active{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-position: right center;
 }
 .form-group label{
     align-self: flex-start;
@@ -352,7 +355,7 @@
     -o-transition: transform .3s ease-in-out;
 }
 .form-group .label{
-    color: rgba(102,0,153,1) !important;
+    color: rgba(201,37,107,1) !important;
     transform: translate(5px, 10px) scale(0.8) !important;
     -webkit-transform: translate(5px, 10px) scale(0.8) !important;
     -moz-transform: translate(5px, 10px) scale(0.8) !important;
@@ -378,17 +381,17 @@
     display: grid;
     place-items: center;
     background: var(--whiteColor);
-    box-shadow: 0 0 3px rgba(102,0,153,.8);
+    box-shadow: 0 0 3px rgba(201,37,107,1);
 }
 .form-info-contactList a:hover{
-    background: linear-gradient( 135deg, #ABDCFF 10%, rgba(102,0,153,1) 100%);
-    box-shadow: 0 0 5px #ABDCFF;
+    background: linear-gradient( 135deg,  rgba(22,22,22,1) 10%, rgba(255,20,175,1) 100% );
+    box-shadow: 0 0 5px rgba(201,37,107,1);
 }
 .form-info-contactList a:hover svg path{
     fill: var(--whiteColor) !important;
 }
 .form-info-contactList a svg path{
-    fill: rgba(102,0,153,1) !important;
+    fill: rgba(201,37,107,1) !important;
 }
 
 @media screen and (max-width:850px) {
@@ -519,7 +522,7 @@
         -webkit-transition: clip-path .3s linear;
         -moz-transition: clip-path .3s linear;
         -o-transition: clip-path .3s linear;
-        background: linear-gradient( 135deg, rgba(102,0,153,.5) 10%,  rgba(171,220,255,.4) 100%);
+        background: linear-gradient( 135deg,  rgba(22,22,22,.5) 10%, rgba(255,20,175,.6) 100% );
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
     .info-nav.active-nav{
@@ -529,7 +532,6 @@
         font-size: 1.4rem;
         line-height: 2rem;
         font-weight: 400;
-        text-shadow: 0px 0px 3px var(--whiteColor);
     }
     .info-nav a::after{
         height: 2px;

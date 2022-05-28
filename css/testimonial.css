@@ -27,7 +27,7 @@
     content: "\201C";
     font-size: 5rem;
     font-weight: 800;
-    color: rgba(102,0,153,.2);
+    color: rgba(201,37,107,1);
     vertical-align: -16px;
     margin-right: 10px;
 }
@@ -35,7 +35,7 @@
     content: "\201D";
     font-size: 5rem;
     font-weight: 800;
-    color: rgba(102,0,153,.2);
+    color: rgba(201,37,107,1);
     vertical-align: -23px;
     margin-left: 10px;
 }
@@ -55,7 +55,7 @@
     margin: -4rem 0 0 4rem;
     position: relative;
     z-index: 2;
-    border: 6px solid rgba(102,0,153,.2);
+    border: 6px solid rgba(201,37,107,1);
 }
 .testi-crd-username{
     font-weight: 600;
