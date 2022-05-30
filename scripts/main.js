@@ -83,7 +83,7 @@ $(document).ready(function () {
 });
 
 
-// <!--Start of Tawk.to Script-->
+// ====================================== * Start of Tawk.to Script * ======================================= -->
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
@@ -93,3 +93,49 @@ s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
+
+
+
+// ====================================== * Contact Form Coding * ======================================= -->
+const form = document.getElementById('form');
+const salesName = document.getElementById('name');
+const salesEmail = document.getElementById('email');
+const salesSubject = document.getElementById('subject');
+const salesMessage = document.getElementById('message');
+const salesSubmit = document.getElementById('submit');
+
+salesName.addEventListener('input', function(e){
+    e.preventDefault();
+    const fullNameregex= /^[a-zA-Z\s\.]+$/;
+    if (fullNameregex.test(e.target.value) === false) {
+        salesName.value = salesName.value.slice(0,salesName.value.length - 1)
+      }
+});
+
+// meetPhone.addEventListener('keydown', function(e){
+//     if(e.key==='.' || e.key === '-' || e.key === '+'){
+//         e.preventDefault();
+//         this.addEventListener('input', function(event){
+//             event.target.value = event.target.value.replace(/[^0-9]*/g,'');
+//         });
+//     }
+// });
+
+salesEmail.addEventListener('blur', function(e){
+    e.preventDefault();
+     const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+     if (emailregex.test(salesEmail.value) === false) {
+             salesEmail.value = "";
+             return 
+         }
+ });   
+
+//  form.addEventListener('submit', function(e){
+//     salesSubmit.style.color="rgba(11, 44, 11,1)";
+//     salesSubmit.textContent = "Message Sent...!";
+// })
+
+// salesSubmit.addEventListener('submit', function(e){
+//     salesSubmit.style.color="rgba(11, 44, 11,1)";
+//     salesSubmit.textContent = "Message Sent...!";
+// })

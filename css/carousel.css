@@ -395,11 +395,11 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
           justify-content: center;
           overflow: auto;
           padding: 5px 10px !important;
-          z-index: 1;
+          z-index: 2;
       }
       .carousel-head{
         /* padding: 0px 0px; */
-        padding: 60px 0px;
+        padding: 20px 0px;
         display: block;
       }
       .carousel-head #logo{
@@ -431,8 +431,8 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
       }
   
       .right-carousel{
-          width: 40%;
-          display: none;
+          width: 50%;
+          /* display: none; */
       }  
       
       @keyframes bckColorChange {
