@@ -112,15 +112,6 @@ salesName.addEventListener('input', function(e){
       }
 });
 
-// meetPhone.addEventListener('keydown', function(e){
-//     if(e.key==='.' || e.key === '-' || e.key === '+'){
-//         e.preventDefault();
-//         this.addEventListener('input', function(event){
-//             event.target.value = event.target.value.replace(/[^0-9]*/g,'');
-//         });
-//     }
-// });
-
 salesEmail.addEventListener('blur', function(e){
     e.preventDefault();
      const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -130,12 +121,10 @@ salesEmail.addEventListener('blur', function(e){
          }
  });   
 
-//  form.addEventListener('submit', function(e){
-//     salesSubmit.style.color="rgba(11, 44, 11,1)";
-//     salesSubmit.textContent = "Message Sent...!";
-// })
+ form.addEventListener('submit', function(e){
+    salesSubmit.textContent = "Message Sent...!";
+    setTimeout(() => {
+        this.submit();
+    }, 1000);
+})
 
-// salesSubmit.addEventListener('submit', function(e){
-//     salesSubmit.style.color="rgba(11, 44, 11,1)";
-//     salesSubmit.textContent = "Message Sent...!";
-// })

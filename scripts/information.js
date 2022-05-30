@@ -52,4 +52,46 @@ window.addEventListener('scroll', function (e) {
            phoneCode.classList.remove('phoneCode');
        }
      })
-})     
+}) 
+
+
+// ====================================== * Contact Form Coding * ======================================= -->
+const form = document.getElementById('form');
+const salesName = document.getElementById('name');
+const salesEmail = document.getElementById('email');
+const salesSubject = document.getElementById('subject');
+const salesMessage = document.getElementById('message');
+const salesSubmit = document.getElementById('submit');
+
+salesName.addEventListener('input', function(e){
+    e.preventDefault();
+    const fullNameregex= /^[a-zA-Z\s\.]+$/;
+    if (fullNameregex.test(e.target.value) === false) {
+        salesName.value = salesName.value.slice(0,salesName.value.length - 1)
+      }
+});
+
+// meetPhone.addEventListener('keydown', function(e){
+//     if(e.key==='.' || e.key === '-' || e.key === '+'){
+//         e.preventDefault();
+//         this.addEventListener('input', function(event){
+//             event.target.value = event.target.value.replace(/[^0-9]*/g,'');
+//         });
+//     }
+// });
+
+salesEmail.addEventListener('blur', function(e){
+    e.preventDefault();
+     const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+     if (emailregex.test(salesEmail.value) === false) {
+             salesEmail.value = "";
+             return 
+         }
+ });   
+
+ form.addEventListener('submit', function(e){
+    salesSubmit.textContent = "Message Sent...!";
+    setTimeout(() => {
+        this.submit();
+    }, 1000);
+})
