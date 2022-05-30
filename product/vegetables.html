@@ -121,7 +121,7 @@
                     </div>
                 </div>
                 <div class="product-form">
-                    <form action="#" method="POST" class="productForm" id="productForm">
+                    <form action="../salesForm/form.php" method="POST" class="productForm" id="productForm">
                         <p>Enter Product Details</p>
                         <div class="form-group">
                             <label for="pName">Name</label>
@@ -129,14 +129,15 @@
                         </div>
                         <div class="form-group">
                             <label for="cName">Company Name</label>
-                            <input class="inputField" type="text" name="cName" id="cName" autocomplete="off" required>
+                            <input class="inputField" type="text" name="pCompanyName" id="cName" autocomplete="off" required>
                         </div>
                         <div class="form-group-country">
                             <select name="sCountry" id="sCountry" required><option value="">Select Country</option><!-- Options tag are inserted from JavaScript --></select>
                             <div class="form-group-number">
                             <span id="phoneCode">+0000</span>
+                            <input hidden type="text" name="pPhoneCode" id="pPhoneCode">
                             <label for="pNumber">Contact Number</label>
-                            <input class="inputFieldContact" type="text" name="pNumber" id="pNumber" autocomplete="off" required>
+                            <input class="inputFieldContact" type="number" name="pNumber" id="pNumber" autocomplete="off" required>
                            </div>
                         </div>
                         <div class="form-group">
@@ -148,7 +149,7 @@
                             <textarea class="inputField" name="requirements" id="requirements" required></textarea>
                         </div>
                         <div class="form-group">
-                            <button type="submit">Get quote</button>
+                            <button type="submit" id="getQuote">Get quote</button>
                         </div>
                     </form>
                 </div>

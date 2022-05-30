@@ -265,16 +265,17 @@
     display: flex;
 }
 .form-group-number span{
-    width: 50px;
+    width: 60px;
     background: var(--whiteColor);
     border: 1.5px solid rgba(201,37,107,.5);
     border-right: none;
-    padding-left: 2px;
+    padding: 10px 4px !important;
 }
 .form-group-number input{
     width: calc( 100% - 50px);
     background: var(--whiteColor);
     border: 1.5px solid rgba(201,37,107,.5);
+    padding-left: 0px;
     border-left: none;
     outline: none;
 }
@@ -287,9 +288,9 @@
 
 .phoneCode{
     border-right: none !important;
-    border-left: 1.5px solid rgba(201,37,107,.5) !important;
-    border-bottom: 1.5px solid rgba(201,37,107,.5) !important;
-    border-top: 1.5px solid rgba(201,37,107,.5) !important;
+    border-left: 1.5px solid rgba(201,37,107,1) !important;
+    border-bottom: 1.5px solid rgba(201,37,107,1) !important;
+    border-top: 1.5px solid rgba(201,37,107,1) !important;
 }
 
 .form-group-number label{
