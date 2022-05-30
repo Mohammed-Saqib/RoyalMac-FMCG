@@ -3,7 +3,7 @@ if(isset($_POST['name'], $_POST['email'], $_POST['subject'], $_POST['message']))
 {
 $name = $_POST['name'];
 $email = $_POST['email'];
-$subject = $_POST['subject'];
+$subject = 'From Website ' . $_POST['subject'];
 $message = $_POST['message'];
 
 $to = "sales@royalmacinternational.com";
@@ -21,12 +21,13 @@ if(isset($_POST['pName'], $_POST['pCompanyName'], $_POST['pEmail'], $_POST['pNum
 $name = $_POST['pName'];
 $companyName = $_POST['pCompanyName'];
 $country = $_POST['sCountry'];
-$phoneNumber = $_POST['phoneCode'] . ' ' . $_POST['phoneNumber'];
+$phoneNumber = $_POST['pPhoneCode'] . ' ' . $_POST['pNumber'];
 $email = $_POST['pEmail'];
 $requirements = $_POST['requirements'];
 
 $to = "sales@royalmacinternational.com";
 $body = "";
+$subject = "From Website Requesting Product Quote";
 
 $body .= "From: ".$name. "\r\n";
 $body .= "Company Name: ".$companyName. "\r\n";
