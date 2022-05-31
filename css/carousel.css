@@ -4,10 +4,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(../images/img1.webp) no-repeat;
-  background-position: center -100px;
+  background: url(../images/demo.webp) no-repeat;
+  background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
   position: relative;
   overflow: hidden !important;
 }
@@ -35,112 +34,37 @@ transition: background-color 1.2s ease-in-out;
   70%{background-color: rgba(3,150,255,.9);}
   100%{background-color: rgba(11, 44, 11,.9);}
 }
-
-.slide{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transition: all 0.2s ease !important;
-  -webkit-transition: all 0.2s ease !important;
-  -moz-transition: all 0.2s ease !important;
-  z-index: 1;
-}
-
-.slide img{
-  width: 100%; height: 100%; 
-  object-fit: cover; 
-  object-position: top;
-  animation: zoom 15s ease-in-out infinite alternate-reverse both;
-  -webkit-animation: zoom 15s ease-in-out infinite alternate-reverse both;
-  -moz-animation: zoom 15s ease-in-out infinite alternate-reverse both;
-  transition: transform 1s ease;
-  -webkit-transition: transform 1s ease;
-  -moz-transition: transform 1s ease;
-}
-
-@keyframes zoom{
-  50%{
-      transform: scale(1.1);
-      -webkit-transform: scale(1.1);
-      -moz-transform: scale(1.1);
-      object-position: center;
-  }
- 
-  100%{
-      transform: scale(1);
-      -webkit-transform: scale(1);
-      -moz-transform: scale(1);
-      object-position: top;
-  }
-}
-
 .carousel{
-      margin-top: 100px;
-      width: 85%;
-      padding: 30px 0px;
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      color: #FFF;
-      overflow: hidden;
-      z-index: 3;
-}
-.carousel-head{
-  /* padding: 30px 0px; */
-  display: none;
+  margin-top: 100px;
+  width: 85%;
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #FFF;
   overflow: hidden;
+  z-index: 3;
 }
-
-.carousel-head #logo{
-  width: 500px;
-  height:200px;
-  overflow: hidden !important;
-  fill: var(--whiteColor) !important;
-  /* animation: fill 30s ease-in-out infinite alternate-reverse both 5s;
-  -webkit-animation: fill 30s ease-in-out infinite alternate-reverse both 5s;
-  -moz-animation: fill 30s ease-in-out infinite alternate-reverse both 5s;
-  -o-animation: fill 30s ease-in-out infinite alternate-reverse both 5s; */
+.box-move{
+  margin-top: -139px;
+  width: 100%;
+  overflow: hidden;
+  animation: move-forever4 35s linear infinite;
+}  
+.box-move img{
+  width: 300px;
+  z-index: 1;
+  transform: translateY(10px);
+  animation: up-downs 2s ease-in-out infinite alternate-reverse both;
 }
-
-.carousel-head #logo path{
-  stroke: none !important;
-  padding: 80px 0px !important;
+@keyframes up-downs {
+  0% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(6px);
+  }
 }
-#logo path:nth-child(1){
-animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.6s;   /*  4  */
-}
-#logo path:nth-child(2){
-animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.8s;   /*  5  */
-}
-#logo path:nth-child(3){
-animation: up-down 1.5s ease-in-out infinite alternate-reverse both 1.2s;   /*  7  */
-}
-#logo path:nth-child(4){
-animation: up-down 1.5s ease-in-out infinite alternate-reverse both 1s;   /*  6  */
-}
-#logo path:nth-child(5){
-animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  2  */
-}
-#logo path:nth-child(6){
- animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.4s;   /*  3  */
-}
-#logo path:nth-child(7){
- animation: up-down 1.5s ease-in-out infinite alternate-reverse both 1.4s;   /*  8  */
-}
-#logo path:nth-child(8){
- animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0s;    /*  1  */ 
-}
-
-@keyframes fill {
-  0%{fill: rgba(223, 0, 255,1);}
-  25%{fill: rgba(17,20,235,1);}
-  50%{fill: rgba(255,14,20,1);}
-  70%{fill: rgba(3,150,255,1);}
-  100%{fill: rgba(11, 44, 11,1);}
-}
-  
 .left-carousel{
     width: 60%;
     height: 100%;
@@ -207,7 +131,6 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
     background-color: rgba(102,0,153,.3);
     border: 1px solid var(--whiteColor);
   }
-  
   .right-carousel{
       width: 25%;
       display: flex;
@@ -215,14 +138,12 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
       align-items: center;
       justify-content: center;
   }
-  
   .right-carousel img{
       width: 100%;
       height: 100%;
       object-position: center;
       object-fit: contain;
   }
-  
   .animated {
       animation: up-down 2s ease-in-out infinite alternate-reverse both;
   }
@@ -327,6 +248,14 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
         transform: translate(85px, 0%);
       }
     }
+    @keyframes move-forever4 {
+      0% {
+        transform: translate(-30%, 0%);
+      }
+      100% {
+        transform: translate(100%, 0%);
+      }
+    }
   
     @media screen and (max-width: 1200px) {
       .c-heading h1{
@@ -343,16 +272,9 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
     }
   
     @media screen and (max-width: 750px) {
-      .header-container{
-        background-position: -530px -15px;
-        background-size: 300% 60%;
-      }
       .carousel{
         padding: 30px 0px;
         margin-top: 80px;
-      }
-      .carousel-head #logo{
-        width: 400px;
       }
       .c-heading h1{
           font-size: 2rem;
@@ -367,8 +289,15 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
         font-size: 1.6rem;
         line-height: 1.6rem;
       }
+      @keyframes move-forever4 {
+        0% {
+          transform: translate(-90%, 0%);
+        }
+        100% {
+          transform: translate(100%, 0%);
+        }
+      }
   }
-  
     @media screen and (max-width: 600px) {
       .c-heading h1{
           font-size: 1.4rem;
@@ -382,10 +311,6 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
   }
   
     @media screen and (max-width: 450px) {
-      .header-container{
-        background-position: -270px -55px;
-        background-size: 300% 50%;
-      }
       .carousel{
           margin-top: 40px;
           width: 80vw !important;
@@ -393,20 +318,11 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
           flex-direction: column-reverse;
           align-items: center;
           justify-content: center;
-          overflow: auto;
+          overflow: hidden;
           padding: 5px 10px !important;
           z-index: 2;
       }
-      .carousel-head{
-        /* padding: 0px 0px; */
-        padding: 20px 0px;
-        display: block;
-      }
-      .carousel-head #logo{
-        width: 250px;
-        height:180px;
-      }
-  
+
       .c-heading h1{
           font-size: 1.4rem;
           line-height: 1.8rem;
@@ -444,14 +360,3 @@ animation: up-down 1.5s ease-in-out infinite alternate-reverse both 0.2s;   /*  
         100%{background-color: rgba(11, 44, 11,.97);}
       }
   }
-
-  @media screen and (max-width: 350px) {
-    .carousel-head{
-      padding: 10px 0px;
-    }
-    .carousel-head #logo{
-      width: 200px;
-      height:100px;
-    }
-  }
-  
