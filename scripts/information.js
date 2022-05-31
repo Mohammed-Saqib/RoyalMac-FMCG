@@ -26,6 +26,20 @@ window.addEventListener('scroll', function (e) {
      window.scrollTo(0 , 0);
  })
 
+  // ==================================Contact Coding=======================================//
+  let inputFields = document.querySelectorAll('.inputFields')
+  let labelField = document.querySelectorAll('.form-group label');
+  for (let i = 0; i < inputFields.length; i++) {
+      inputFields[i].addEventListener('focus', function(){
+          labelField[i].classList.add('labelField');
+          inputFields[i].addEventListener('blur', function (e) { 
+             if (e.target.value.length === 0) {
+                 labelField[i].classList.remove('labelField');
+             }
+           })
+      })     
+  }
+
  // ==================================Product Quote Coding=======================================//
  let inputField = document.querySelectorAll('.inputField')
  let labelMid = document.querySelectorAll('.form-group label');

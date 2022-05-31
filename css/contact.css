@@ -134,14 +134,37 @@
     display: flex;
     flex-direction: column;
 }
-.form-group{
-    width: 100%;
-    padding: 10px 0px;
+.form-groups{
     display: flex;
     justify-content: center;
     column-gap: 20px;
 }
-
+.form-group{
+    width: 100%;
+    padding: 10px 0px;
+    position: relative;
+} 
+.form-group label{
+    position: absolute;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, .6);
+    transform: translate(15px, 10px);
+    -webkit-transform: translate(15px, 10px);
+    -moz-transform: translate(15px, 10px);
+    -o-transform: translate(15px, 10px);
+    background: linear-gradient(to bottom, transparent 10% , var(--whiteColor) 40%);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition: transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out;
+}  
+.labelField{
+    color: rgba(201,37,107,1) !important;
+    transform: translate(10px, -10px) scale(0.75) !important;
+    -webkit-transform: translate(10px, -10px) scale(0.75) !important;
+    -moz-transform: translate(10px, -10px) scale(0.75) !important;
+    -o-transform: translate(10px, -10px) scale(0.75) !important;
+}
 .form-group input, .form-group textarea{
     width: 100%;
     padding: 10px 10px;
@@ -149,6 +172,7 @@
     outline: none;
     border: 1px solid rgba(201,37,107,.5);
     font-size: 1.4rem;
+
 }
 .form-group textarea{
     resize: none;
@@ -207,9 +231,11 @@
         height: 50px;
         perspective: 800px;
     }
-    .form-group{
+    .form-groups{
         flex-direction: column;
         align-items: center;
+    }
+    .form-group{
         padding: 5px 0px;
         column-gap: 0px;
         row-gap: 10px;

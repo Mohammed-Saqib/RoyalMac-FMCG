@@ -88,12 +88,26 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
-s1.src='https://embed.tawk.to/628600827b967b11799027d5/1g3dn3vjo';
+s1.src='https://embed.tawk.to/62959e3e7b967b1179920fcc/1g4c7494a';
 s1.charset='UTF-8';
 s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })();
 
+
+ // ==================================Contact Coding=======================================//
+ let inputFields = document.querySelectorAll('.inputFields')
+ let labelField = document.querySelectorAll('.form-group label');
+ for (let i = 0; i < inputFields.length; i++) {
+     inputFields[i].addEventListener('focus', function(){
+         labelField[i].classList.add('labelField');
+         inputFields[i].addEventListener('blur', function (e) { 
+            if (e.target.value.length === 0) {
+                labelField[i].classList.remove('labelField');
+            }
+          })
+     })     
+ }
 
 
 // ====================================== * Contact Form Coding * ======================================= -->

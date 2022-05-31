@@ -14,12 +14,12 @@
 
 .f-style{
     font-family: king;
-    color: var(--color13);
+    /* color: var(--color13); */
     font-weight: bold;
-    background-image: linear-gradient( 180deg,  rgba(22,22,22,.9) 20%, rgba(255,20,175,1) 100% );
+    /* background-image: linear-gradient( 180deg,  rgba(22,22,22,.9) 20%, rgba(255,20,175,1) 100% );
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: transparent; */
 }
 
 .products-container{
@@ -28,6 +28,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 15px;
     padding: 10px;
+    margin: 10px 0px;
     overflow: hidden;
 }
 

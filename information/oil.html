@@ -184,19 +184,24 @@
                 </a>
             </div>
             <div class="contact-right">
-                <form action="../salesForm/form.php" method="POST" id="form">
-                    <div class="form-group">
-                        <input type="text" name="name" id="name" placeholder="Your Name" required autocomplete="off">
-                        <input type="email" name="email" id="email" placeholder="Your Email" required
-                            autocomplete="off">
+                <form action="../salesForm/form.php" method="POSt" id="form">
+                    <div class="form-groups">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input class="inputFields" type="text" name="name" id="name" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input class="inputFields" type="email" name="email" id="email" required autocomplete="off">
+                        </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="subject" id="subject" placeholder="Subject" required
-                            autocomplete="off">
+                        <label for="subject">Subject</label>
+                        <input class="inputFields" type="text" name="subject" id="subject" required autocomplete="off">
                     </div>
                     <div class="form-group">
-                        <textarea name="message" id="message" placeholder="Message" required
-                            autocomplete="off"></textarea>
+                        <label for="message">Message</label>
+                        <textarea class="inputFields" name="message" maxlength="100" id="message" required autocomplete="off"></textarea>
                     </div>
                     <div class="form-group">
                         <button type="submit" id="submit">Send Message</button>

@@ -102,6 +102,7 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 0;
+    font-display: swap;
     font-family: king;
     letter-spacing: 2px;
     color: rgba(201,37,107,1);
