@@ -26,6 +26,13 @@ window.addEventListener('scroll', function (e) {
      window.scrollTo(0 , 0);
  })
 
+// ==================================Contact Coding=======================================//
+  const animDelay = document.querySelectorAll('.p-t-crd-content');
+  animDelay.forEach(crd => {
+      crd.style.animationDelay = -Math.floor(Math.random() * 20)+'s'
+      console.log(crd.style);
+  })
+
   // ==================================Contact Coding=======================================//
   let inputFields = document.querySelectorAll('.inputFields')
   let labelField = document.querySelectorAll('.form-group label');
@@ -127,7 +134,7 @@ sCountry.addEventListener('change', function (e) {
 })
 getCountries();
 
-// ====================================== * Contact Form Coding * ======================================= -->
+// ====================================== * Contact Form Validation Coding * ======================================= -->
 const productForm = document.getElementById('productForm');
 const pName = document.getElementById('pName');
 const pEmail = document.getElementById('pEmail');
