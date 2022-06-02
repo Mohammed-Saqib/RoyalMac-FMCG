@@ -42,7 +42,55 @@ li{
 a{
     text-decoration: none;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient( 135deg,  rgba(22,22,22,.8) 10%, rgba(255,20,175,1) 100% );
+    border-radius: 25px;
+    height: 130px;
+}
+.goog-te-gadget{
+    position: absolute;
+    top: 0.1%;
+    right: 2%;
+    font-size: 0 !important;
+    display: block !important;
+    z-index: 100;
+}
+.goog-te-gadget select{
+    border: 1px solid var(--whiteColor);
+    color: var(--whiteColor) !important;
+    outline: none;
+    border-radius: 3px;
+    font-size: 14px;
+    animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
+    -webkit-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
+    -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
+    -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
+}
+.goog-te-gadget select option{
+    background: rgba(0,0,0,.8);
+}
 
+.skiptranslate.goog-te-gadget span{
+    display: none !important;
+}
+
+
+#goog-gt-tt{
+    display: none !important;
+}
+
+.goog-te-banner-frame {
+    border-bottom: none !important;
+    box-shadow: none !important;
+    margin-bottom: -100px !important;
+    display: none;
+}
+body[style]{
+    top: 0px !important;
+}
 body{
     background: var(--whiteColor); 
     width: 100vw;

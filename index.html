@@ -16,14 +16,14 @@
     <!-- Juery Link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- OWL Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+    <!-- swiper Link CSS -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/> -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
 
     <title>RoyalMac FMCG</title>
 </head>
 
 <body>
-
     <!-- ====================================== * Header Section * ======================================= -->
     <section class="header-container">
         <div class="navbar-container">
@@ -57,23 +57,14 @@
                 </div>
             </div>
         </div>
+        <div id="google_translate_element" class="lang"></div>
+
         <div class="carousel">
-            <div class="left-carousel">
-                <div class="c-heading">
-                    <h1>RoyalMac</h1>
-                </div>
-                <div class="info">
-                    <p>The RoyalMac is a multinational business conglomerate with a core business segment of large
-                        volume import and export, general trading, and merchandising across the world, which was formed
-                        as a consortium with a strategic joint venture mentality.
-                    </p>
-                </div>
-                <a href="https://www.royal-mac.com" target="_blank" title="RoyalMac">Know More</a>
-            </div>
             <div class="right-carousel">
                 <img src='./images/logo.webp' alt="header Image" class='animated' />
             </div>
         </div>
+
         <div class="box-move">
             <img src="./images/ship.png" alt="ship">
         </div>
@@ -518,64 +509,66 @@
         <div class="section-title">
             <h1 class="p-heading" id="testimonial">TESTIMONIALS</h1>
         </div>
-        <div class="testimonials-container owl-carousel">
-            <div class="testi-card">
-                <div class="testi-crd-container">
-                    <p class="para double-quotes">I was looking for a service to help me with my FMCG needs as one stop
-                        solution for all my retail shop and I found RoyalMac. They were very helpful and gave me the
-                        best rates in town. I would recommend them to anyone looking for hassle-free FMCG service.</p>
-                </div>
-                <div class="testi-crd-profile">
-                    <img src="./images/testiUsers5.jpg" alt="user profile" loading="lazy">
-                    <p class="para testi-crd-username">Mr. Smith</p>
-                </div>
-            </div>
-            <div class="testi-card">
-                <div class="testi-crd-container">
-                    <p class="para double-quotes">I have been working with RoyalMac for over a year now and they have
-                        delivered on every promise. I was looking for an FMCG distributor that could offer me
-                        hassle-free service, and that is exactly what I got. The team is always available to help me.
-                    </p>
-                </div>
-                <div class="testi-crd-profile">
-                    <img src="./images/testiUser1.jpg" alt="user profile" loading="lazy">
-                    <p class="para testi-crd-username">Deepa Agarwal</p>
-                </div>
-            </div>
-            <div class="testi-card">
-                <div class="testi-crd-container">
-                    <p class="para double-quotes">I have been using RoyalMac FMCG for over 6 months now and they are the
-                        best. They have a wide variety of spices, so my customers never turn to other retailers. They
-                        also have a really friendly customer service team who is always willing to go the extra mile to
-                        help when I need it.</p>
-                </div>
-                <div class="testi-crd-profile">
-                    <img src="./images/testiUser2.jpg" alt="user profile" loading="lazy">
-                    <p class="para testi-crd-username">Catherine</p>
-                </div>
-            </div>
-            <div class="testi-card">
-                <div class="testi-crd-container">
-                    <p class="para double-quotes">RoyalMac offers a wide range of coffee flavors and I find myself
-                        switching between them depending on my mood. I have never had a bad batch of beans from them,
-                        nor have I ever found anything that has been too strong or too weak.</p>
-                </div>
-                <div class="testi-crd-profile">
-                    <img src="./images/testiUser3.jpg" alt="user profile" loading="lazy">
-                    <p class="para testi-crd-username">Mr. Andrew</p>
-                </div>
-            </div>
-            <div class="testi-card">
-                <div class="testi-crd-container">
-                    <p class="para double-quotes">I've been buying bulk rice and pulses from RoyalMac for 3 months now
-                        and I couldn't be happier. The variety of rice that they offer is great and their prices are the
-                        lowest compared to others. I would highly recommend them to anyone looking for a good place to
-                        buy rice from!</p>
-                </div>
-                <div class="testi-crd-profile">
-                    <img src="./images/testiUser4.jpg" alt="user profile" loading="lazy">
-                    <p class="para testi-crd-username">Martin Thomas</p>
-                </div>
+        <div class="testimonials-container">
+            <div class="swiper-wrapper">
+                    <div class="testi-card swiper-slide">
+                        <div class="testi-crd-container">
+                            <p class="para double-quotes">I was looking for a service to help me with my FMCG needs as one stop
+                                solution for all my retail shop and I found RoyalMac. They were very helpful and gave me the
+                                best rates in town. I would recommend them to anyone looking for hassle-free FMCG service.</p>
+                        </div>
+                        <div class="testi-crd-profile">
+                            <img src="./images/testiUsers5.jpg" alt="user profile" loading="lazy">
+                            <p class="para testi-crd-username">Mr. Smith</p>
+                        </div>
+                    </div>
+                    <div class="testi-card swiper-slide">
+                        <div class="testi-crd-container">
+                            <p class="para double-quotes">I have been working with RoyalMac for over a year now and they have
+                                delivered on every promise. I was looking for an FMCG distributor that could offer me
+                                hassle-free service, and that is exactly what I got. The team is always available to help me.
+                            </p>
+                        </div>
+                        <div class="testi-crd-profile">
+                            <img src="./images/testiUser1.jpg" alt="user profile" loading="lazy">
+                            <p class="para testi-crd-username">Deepa Agarwal</p>
+                        </div>
+                    </div>
+                    <div class="testi-card swiper-slide">
+                        <div class="testi-crd-container">
+                            <p class="para double-quotes">I have been using RoyalMac FMCG for over 6 months now and they are the
+                                best. They have a wide variety of spices, so my customers never turn to other retailers. They
+                                also have a really friendly customer service team who is always willing to go the extra mile to
+                                help when I need it.</p>
+                        </div>
+                        <div class="testi-crd-profile">
+                            <img src="./images/testiUser2.jpg" alt="user profile" loading="lazy">
+                            <p class="para testi-crd-username">Catherine</p>
+                        </div>
+                    </div>
+                    <div class="testi-card swiper-slide">
+                        <div class="testi-crd-container">
+                            <p class="para double-quotes">RoyalMac offers a wide range of coffee flavors and I find myself
+                                switching between them depending on my mood. I have never had a bad batch of beans from them,
+                                nor have I ever found anything that has been too strong or too weak.</p>
+                        </div>
+                        <div class="testi-crd-profile">
+                            <img src="./images/testiUser3.jpg" alt="user profile" loading="lazy">
+                            <p class="para testi-crd-username">Mr. Andrew</p>
+                        </div>
+                    </div>
+                    <div class="testi-card swiper-slide">
+                        <div class="testi-crd-container">
+                            <p class="para double-quotes">I've been buying bulk rice and pulses from RoyalMac for 3 months now
+                                and I couldn't be happier. The variety of rice that they offer is great and their prices are the
+                                lowest compared to others. I would highly recommend them to anyone looking for a good place to
+                                buy rice from!</p>
+                        </div>
+                        <div class="testi-crd-profile">
+                            <img src="./images/testiUser4.jpg" alt="user profile" loading="lazy">
+                            <p class="para testi-crd-username">Martin Thomas</p>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -739,9 +732,10 @@
         </svg>
     </div>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script> -->
-    <script src="./scripts/owl.carousel.min.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+    <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script> -->
+    <script src="./scripts/swiper-bundle.min.js" defer></script>
     <script src="./scripts/main.js" defer></script>
 </body>
 

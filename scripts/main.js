@@ -1,5 +1,4 @@
 // ==================================Menu Bar Toggle Coding=======================================//
-
 let speed = 12000;
 let stopingIntervals;
 const navButton = document.querySelector('.navButton');
@@ -39,6 +38,34 @@ window.addEventListener('scroll', function (e) {
     this.scrollY > 175 ? document.querySelector('.navButton').classList.add('act-scrl-bg') : document.querySelector('.navButton').classList.remove('act-scrl-bg')
  })
 
+ //================================== language coding ==================================//
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'en,es,de,fr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT }, 'google_translate_element');
+}
+$(window).on('load', function () {
+    googleTranslateElementInit();
+    $('.goog-te-gadget').html($('.goog-te-gadget').children());
+
+    function cleartimer() {
+        setTimeout(function () {
+            window.clearInterval(myVar);
+        }, 500);
+    }
+    function myTimer() {
+        if ($('.goog-te-combo option:first').length) {
+            $('.goog-te-combo option:first').html('Language');
+            cleartimer();
+        }
+    }
+    var myVar = setInterval(function () { myTimer() }, 0);
+});
+
+// ==================================Logo Hide  Coding=======================================//
+const logo = document.querySelector('.right-carousel');
+setTimeout(() => {
+    logo.classList.add('hide-logo');
+}, 9000);
+
 
 // ==================================Go UP Coding=======================================//
  document.querySelector('.go-up').addEventListener('click', function (e) {
@@ -47,39 +74,24 @@ window.addEventListener('scroll', function (e) {
  })
 
 // ====================================== * Testimonials * ======================================= -->
-$(document).ready(function () {
-    $('.testimonials-container').owlCarousel({
-        margin: 20,
-        responsiveClass: true,
-        loop: true,
-        autoplay: true,
-        dots: false,
-        nav: false,
-        stagePadding: 10,
-        autoplayHoverPause: false,
-        autoplayTimeout: 4000,
-        smartSpeed: 4000,
-        responsive: {
-            150: {
-                items: 1,
-            },
-            300: {
-                items: 1,
-            },
-            450: {
-                items: 1,
-            },
-            600: {
-                items: 1,
-            },
-            750: {
-                items: 2,
-            },
-            1000: {
-                items: 2,
-            }
-        }
-    });
+var swiper = new Swiper(".testimonials-container", {
+    effect: "coverflow",
+    spaceBetween: 30,
+    autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+   },
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 5,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true,
+    },
+    loop : true,
 });
 
 

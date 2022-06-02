@@ -14,6 +14,11 @@ navButton.addEventListener('click', function (e) {
     }
 })
 
+// ================================== Language Coding=======================================//
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'en',includedLanguages: 'en,es,de,fr', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+}
+
 // ==================================Menu Bar Color Change On Scroll Coding=======================================//
 window.addEventListener('scroll', function (e) { 
     e.preventDefault();

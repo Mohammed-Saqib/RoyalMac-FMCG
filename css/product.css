@@ -45,6 +45,9 @@
     height: 3.5px !important;
     background-size: 400% auto;
     transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 .product-card:hover{  
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -57,6 +60,9 @@
     background: var(--whiteColor);
     clip-path: circle();
     transform: translate(-50px , -150px);
+    -webkit-transform: translate(-50px , -150px);
+    -moz-transform: translate(-50px , -150px);
+    -o-transform: translate(-50px , -150px);
     z-index: 1;
     cursor: pointer;
     overflow: hidden;
@@ -116,6 +122,9 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
     bottom: 0;
     width: calc(100% - 99px);
     height:calc(100% - 100px);
@@ -138,46 +147,86 @@
 }
 .cat-1:nth-child(1) .circle picture img, .cat-4:nth-child(1) .circle picture img{
     animation-delay: -48s !important;
+    -webkit-animation-delay: -48s !important;
+    -moz-animation-delay: -48s !important;
+    -o-animation-delay: -48s !important;
  }
  .cat-1:nth-child(2) .circle picture img, .cat-4:nth-child(2) .circle picture img{
     animation-delay: -.4 !important;
+    -webkit-animation-delay: -.4 !important;
+    -moz-animation-delay: -.4 !important;
+    -o-animation-delay: -.4 !important;
  }
  .cat-1:nth-child(3) .circle picture img, .cat-4:nth-child(3) .circle picture img{
     animation-delay: -.12s !important;
+    -webkit-animation-delay: -.12s !important;
+    -moz-animation-delay: -.12s !important;
+    -o-animation-delay: -.12s !important;
  }
  .cat-1:nth-child(4) .circle picture img, .cat-4:nth-child(4) .circle picture img{
     animation-delay: -.18s !important;
+    -webkit-animation-delay: -.18s !important;
+    -moz-animation-delay: -.18s !important;
+    -o-animation-delay: -.18s !important;
  }
  .cat-2:nth-child(1) .circle picture img, .cat-5:nth-child(1) .circle picture img{
     animation-delay: -.9s !important;
+    -webkit-animation-delay: -.9s !important;
+    -moz-animation-delay: -.9s !important;
+    -o-animation-delay: -.9s !important;
  }
  .cat-2:nth-child(2) .circle picture img, .cat-5:nth-child(2) .circle picture img{
     animation-delay: -.5s !important;
+    -webkit-animation-delay: -.5s !important;
+    -moz-animation-delay: -.5s !important;
+    -o-animation-delay: -.5s !important;
  }
  .cat-2:nth-child(3) .circle picture img, .cat-5:nth-child(3) .circle picture img{
     animation-delay: -.17s !important;
+    -webkit-animation-delay: -.17s !important;
+    -moz-animation-delay: -.17s !important;
+    -o-animation-delay: -.17s !important;
  }
  .cat-2:nth-child(4) .circle picture img, .cat-5:nth-child(4) .circle picture img{
     animation-delay: -.10s !important;
+    -webkit-animation-delay: -.10s !important;
+    -moz-animation-delay: -.10s !important;
+    -o-animation-delay: -.10s !important;
  }
  .cat-3:nth-child(1) .circle picture img, .cat-6:nth-child(1) .circle picture img{
     animation-delay: -.29s !important;
+    -webkit-animation-delay: -.29s !important;
+    -moz-animation-delay: -.29s !important;
+    -o-animation-delay: -.29s !important;
  }
  .cat-3:nth-child(2) .circle picture img, .cat-6:nth-child(2) .circle picture img{
     animation-delay: -.23s !important;
+    -webkit-animation-delay: -.23s !important;
+    -moz-animation-delay: -.23s !important;
+    -o-animation-delay: -.23s !important;
  }
  .cat-3:nth-child(3) .circle picture img, .cat-6:nth-child(3) .circle picture img{
     animation-delay: -.22s !important;
+    -webkit-animation-delay: -.22s !important;
+    -moz-animation-delay: -.22s !important;
+    -o-animation-delay: -.22s !important;
  }
  .cat-3:nth-child(4) .circle picture img, .cat-6:nth-child(4) .circle picture img{
     animation-delay: -.17s !important;
+    -webkit-animation-delay: -.17s !important;
+    -moz-animation-delay: -.17s !important;
+    -o-animation-delay: -.17s !important;
  }
 @keyframes zoominOut {
     100%{
     transform: scale(1.1);
     }
 }
-
+@-webkit-keyframes zoominOut {
+    100%{
+    transform: scale(1.1);
+    }
+}
 .pro-crd-info{
     margin-top: -150px;
     padding: 5px 15px 20px 15px;
@@ -222,9 +271,21 @@
     height: 2px;
     width: 25%;
     transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+    -moz-transform: scaleY(1);
+    -o-transform: scaleY(1);
     transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -o-transform: scaleX(1);
     transform-origin: left;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -o-transform-origin: left;
     transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
 }
 
 .crd-link::after{
@@ -236,8 +297,17 @@
     height: 2px;
     width: 75%;
     transform-origin: right;
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    -o-transform-origin: right;
     transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -o-transform: scaleX(0);
     transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out;
+    -moz-transition: transform .3s ease-in-out;
+    -o-transition: transform .3s ease-in-out;
 }
 
 
@@ -321,11 +391,23 @@
 
 .crd-link:hover::after, .product-card:hover .crd-link::after{
     transform: scaleX(1.1);
+    -webkit-transform: scaleX(1.1);
+    -moz-transform: scaleX(1.1);
+    -o-transform: scaleX(1.1);
     transform-origin: right;
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    -o-transform-origin: right;
 }
 .crd-link:hover::before, .product-card:hover .crd-link::before{
     transform: scaleX(0.5);
+    -webkit-transform: scaleX(0.5);
+    -moz-transform: scaleX(0.5);
+    -o-transform: scaleX(0.5);
     transform-origin: left;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -o-transform-origin: left;
 }
 
 .cat-1:nth-child(1) .crd-link::before , .cat-1:nth-child(1) .crd-link::after, .cat-4:nth-child(1) .crd-link::before , .cat-4:nth-child(1) .crd-link::after{
@@ -368,53 +450,94 @@
 .cat-1:nth-child(1)::after, .cat-4:nth-child(1)::after{
     background-image: linear-gradient(to right, var(--color1) 0%, #ABDCFF  51%, var(--color1)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-1:nth-child(2)::after, .cat-4:nth-child(2)::after{
     background-image: linear-gradient(to right, var(--color2) 0%, #ABDCFF  51%, var(--color2)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-1:nth-child(3)::after, .cat-4:nth-child(3)::after{
     background-image: linear-gradient(to right, var(--color3) 0%, #ABDCFF  51%, var(--color3)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-1:nth-child(4)::after, .cat-4:nth-child(4)::after{
     background-image: linear-gradient(to right, var(--color4) 0%, #ABDCFF  51%, var(--color4)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-2:nth-child(1)::after, .cat-5:nth-child(1)::after{
     background-image: linear-gradient(to right, var(--color5) 0%, #ABDCFF  51%, var(--color5)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-2:nth-child(2)::after, .cat-5:nth-child(2)::after{
     background-image: linear-gradient(to right, var(--color6) 0%, #ABDCFF  51%, var(--color6)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-2:nth-child(3)::after, .cat-5:nth-child(3)::after{
     background-image: linear-gradient(to right, var(--color7) 0%, #ABDCFF  51%, var(--color7)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-2:nth-child(4)::after, .cat-5:nth-child(4)::after{
     background-image: linear-gradient(to right, var(--color8) 0%, #ABDCFF  51%, var(--color8)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-3:nth-child(1)::after, .cat-6:nth-child(1)::after{
     background-image: linear-gradient(to right, var(--color9) 0%, #ABDCFF  51%, var(--color9)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-3:nth-child(2)::after, .cat-6:nth-child(2)::after{
     background-image: linear-gradient(to right, var(--color10) 0%, #ABDCFF  51%, var(--color10)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-3:nth-child(3)::after, .cat-6:nth-child(3)::after{
     background-image: linear-gradient(to right, var(--color11) 0%, #ABDCFF  51%, var(--color11)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-3:nth-child(4)::after, .cat-6:nth-child(4)::after{
     background-image: linear-gradient(to right, var(--color12) 0%, #ABDCFF  51%, var(--color12)  100%) !important;
     animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 
 @keyframes shades {
+    100%{
+        background-position: right center;
+    }
+}
+@-webkit-keyframes shades {
     100%{
         background-position: right center;
     }
