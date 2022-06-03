@@ -62,10 +62,13 @@ $(window).on('load', function () {
 
 // ==================================Logo Hide  Coding=======================================//
 const logo = document.querySelector('.right-carousel');
+const shipAnim = document.querySelector('.box-move');
 setTimeout(() => {
     logo.classList.add('hide-logo');
-}, 9000);
-
+}, 3500);
+shipAnim.addEventListener("animationend", function() {
+    shipAnim.classList.add('shipAnim');
+});
 
 // ==================================Go UP Coding=======================================//
  document.querySelector('.go-up').addEventListener('click', function (e) {
@@ -78,7 +81,7 @@ var swiper = new Swiper(".testimonials-container", {
     effect: "coverflow",
     spaceBetween: 30,
     autoplay: {
-    delay: 5000,
+    delay: 7000,
     disableOnInteraction: false,
    },
     grabCursor: true,

@@ -28,7 +28,7 @@
     --color11:#b50edf;
     --color12:#f51f9c;
     --color13:rgba(201,37,107,1);
-    
+    --tawk-header-background-color: rgba(17,20,235,1) !important;
    }
 
 html{
@@ -59,29 +59,22 @@ a{
     z-index: 100;
 }
 .goog-te-gadget select{
-    border: 1px solid var(--whiteColor);
+    border: none;
+    background-color: transparent;
     color: var(--whiteColor) !important;
     outline: none;
     border-radius: 3px;
     font-size: 14px;
-    animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
-    -webkit-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
-    -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
-    -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
 }
 .goog-te-gadget select option{
     background: rgba(0,0,0,.8);
 }
-
 .skiptranslate.goog-te-gadget span{
     display: none !important;
 }
-
-
 #goog-gt-tt{
     display: none !important;
 }
-
 .goog-te-banner-frame {
     border-bottom: none !important;
     box-shadow: none !important;
@@ -109,7 +102,7 @@ body{
 
 .section-container{
     width: 85%;
-    margin: 20px 0;
+    margin: 10px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,7 +110,7 @@ body{
     overflow: hidden;
 }
 .section-title{
-    margin: 30px 0px;
+    margin: 10px 0px;
     position: relative;
 }
 .mb--10{
@@ -232,7 +225,6 @@ body{
    -webkit-transform: translateY(-40px) !important;
    -o-transform: translateY(-40px) !important;
 }
-
 
 @media only screen and (max-width:750px){
     .section-container{

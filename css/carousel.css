@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(../images/demo.webp) no-repeat;
+  background: url(../images/shipBg.webp) no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -28,12 +28,11 @@ transition: background-color .3s ease-in-out;
 -moz-transition: background-color .3s ease-in-out;
 -o-transition: background-color .3s ease-in-out;
 }
-
 @keyframes bckColorChange {
-  0%{background-color: rgba(223, 0, 255,.85);}
-  25%{background-color: rgba(17,20,235,.85);}
-  50%{background-color: rgba(255,14,20,.85);}
-  70%{background-color: rgba(3,150,255,.85);}
+  0%{background-color: rgba(223, 0, 255,.8);}
+  25%{background-color: rgba(17,20,235,.8);}
+  50%{background-color: rgba(255,14,20,.8);}
+  70%{background-color: rgba(3,150,255,.8);}
   100%{background-color: rgba(11, 44, 11,.9);}
 }
 .carousel{
@@ -46,17 +45,29 @@ transition: background-color .3s ease-in-out;
   overflow: hidden;
   z-index: 3;
 }
-.box-move{
+.ship-container{
   margin-top: -139px;
   width: 100%;
   overflow: hidden;
+  align-self: flex-start;
+}
+.box-move{
+  max-width: 100%;
+  transform: translateX(-10%);
+  animation: move-forever4s 35s linear 1;
+  -webkit-animation: move-forever4s 35s linear 1;
+  -moz-animation: move-forever4s 35s linear 1;
+  -o-animation: move-forever4s 35s linear 1;
+}  
+.shipAnim{
   animation: move-forever4 35s linear infinite;
   -webkit-animation: move-forever4 35s linear infinite;
   -moz-animation: move-forever4 35s linear infinite;
   -o-animation: move-forever4 35s linear infinite;
-}  
+}
 .box-move img{
   width: 300px;
+  min-height: 100%;
   z-index: 1;
   transform: translateY(10px);
   animation: up-downs 2s ease-in-out infinite alternate-reverse both;
@@ -270,17 +281,31 @@ transition: background-color .3s ease-in-out;
       }
     }
     @keyframes move-forever4 {
-      0% {
-        transform: translate(-30%, 0%);
-        -webkit-transform: translate(-30%, 0%);
-        -moz-transform: translate(-30%, 0%);
-        -o-transform: translate(-30%, 0%);
-      }
       100% {
-        transform: translate(100%, 0%);
-        -webkit-transform: translate(100%, 0%);
-        -moz-transform: translate(100%, 0%);
-        -o-transform: translate(100%, 0%);
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
+      }
+      0% {
+        transform: translateX(-30%);
+        -webkit-transform: translateX(-30%);
+        -moz-transform: translateX(-30%);
+        -o-transform: translateX(-30%);
+      }
+    }
+    @keyframes move-forever4s {
+      100% {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
+      }
+      0% {
+        transform: translateX(-10%);
+        -webkit-transform: translateX(-10%);
+        -moz-transform: translateX(-10%);
+        -o-transform: translateX(-10%);
       }
     }
     @media screen and (max-width: 750px) {
@@ -290,17 +315,31 @@ transition: background-color .3s ease-in-out;
         margin-top: 80px;
       }
       @keyframes move-forever4 {
-        0% {
-          transform: translate(-90%, 0%);
-          -webkit-transform: translate(-90%, 0%);
-          -moz-transform: translate(-90%, 0%);
-          -o-transform: translate(-90%, 0%);
-        }
         100% {
-          transform: translate(100%, 0%);
-          -webkit-transform: translate(100%, 0%);
-          -moz-transform: translate(100%, 0%);
-          -o-transform: translate(100%, 0%);
+          transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -o-transform: translateX(100%);
+        }
+        0% {
+          transform: translateX(-90%);
+        -webkit-transform: translateX(-90%);
+        -moz-transform: translateX(-90%);
+        -o-transform: translateX(-90%);
+        }
+      }
+      @keyframes move-forever4s {
+        100% {
+          transform: translateX(100%);
+          -webkit-transform: translateX(100%);
+          -moz-transform: translateX(100%);
+          -o-transform: translateX(100%);
+        }
+        0% {
+          transform: translateX(-40%);
+          -webkit-transform: translateX(-40%);
+          -moz-transform: translateX(-40%);
+          -o-transform: translateX(-40%);
         }
       }
   }
@@ -315,6 +354,18 @@ transition: background-color .3s ease-in-out;
       .right-carousel{
           width: 50%;
       }  
+      .box-move{
+          animation-duration: 25s;
+          -webkit-animation-duration: 25s;
+          -moz-animation-duration: 25s;
+          -o-animation-duration: 25s;
+      }  
+      .shipAnim{
+          animation-duration: 25s;
+          -webkit-animation-duration: 25s;
+          -moz-animation-duration: 25s;
+          -o-animation-duration: 25s;
+      }
       .box-move img{
         width: 230px;
       }
