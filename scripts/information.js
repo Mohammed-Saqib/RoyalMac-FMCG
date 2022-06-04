@@ -35,7 +35,6 @@ window.addEventListener('scroll', function (e) {
   const animDelay = document.querySelectorAll('.p-t-crd-content');
   animDelay.forEach(crd => {
       crd.style.animationDelay = -Math.floor(Math.random() * 20)+'s'
-      console.log(crd.style);
   })
 
   // ==================================Contact Coding=======================================//
@@ -52,7 +51,6 @@ window.addEventListener('scroll', function (e) {
       })     
   }
 
- // ==================================Product Quote Coding=======================================//
  let inputField = document.querySelectorAll('.inputField')
  let labelMid = document.querySelectorAll('.form-group label');
  for (let i = 0; i < inputField.length; i++) {
@@ -66,124 +64,33 @@ window.addEventListener('scroll', function (e) {
      })     
  }
 
- let inputFieldContact = document.querySelector('.inputFieldContact')
- let labelMidC = document.querySelector('.form-group-number label');
- let phoneCodes = document.querySelector('.form-group-number span');
- inputFieldContact.addEventListener('focus', function(){
-    labelMidC.classList.add('labelC');
-    phoneCodes.classList.add('phoneCode');
-    inputFieldContact.addEventListener('blur', function (e) { 
-       if (e.target.value.length === 0) {
-           labelMidC.classList.remove('labelC');
-           phoneCodes.classList.remove('phoneCode');
-       }
-     })
-}) 
+const form = document.getElementById('form');
+const salesName = document.getElementById('name');
+const salesEmail = document.getElementById('email');
+const salesSubject = document.getElementById('subject');
+const salesMessage = document.getElementById('message');
+const salesSubmit = document.getElementById('submit');
 
-
-//====================================== * Calling Api For Getting Country Name And Phone Code * ======================================//              
-const sCountry = document.getElementById('sCountry');
-const phoneCode = document.getElementById('phoneCode');
-
-function getAuthToken(){
-    let API_KEY = "SXJRbWxnOXRmYnM5M3I3VUdkU1NmMEl3RFFlTjNVREl5UERFc1Y3Yw=="
-    return API_KEY;
-}
-
-function getCountries(){
-    let API_KEY = getAuthToken();
-    let countryURL = "https://api.countrystatecity.in/v1/countries";
-    fetch(countryURL, {
-        method : 'GET',
-        headers:{
-            "X-CSCAPI-KEY": `${API_KEY}`,
-            "Accept": "application/json",
-        }
-    }).then(response => response.json()).then(result =>{
-      countries = result;
-      for (let i = 0; i < countries.length; i++) {
-         let optionTag = `<option value="${countries[i].name}">${countries[i].name}</option>` ;
-         sCountry.insertAdjacentHTML('beforeend',optionTag); 
-     }
-    }).catch((error) =>{
-        console.log(error);
-    });
-}
-
-function getPhoneCode(country){
-   if(country == undefined){
-       alert("Sorry we couldn't find Phone Code For Your Country")
-       return
-   }
-   let API_KEY = getAuthToken();
-   let stateURL = `https://api.countrystatecity.in/v1/countries/${country}`;
-   fetch(stateURL, {
-       method : 'GET',
-       headers:{
-           "X-CSCAPI-KEY": `${API_KEY}`,
-           "Accept": "application/json",
-       }
-   }).then(response => response.json()).then(result =>{
-       let phoneCodeNumber = result.phonecode.replace('+','');
-       phoneCode.textContent = `+${phoneCodeNumber}`
-   }).catch((error) =>{
-       console.log(error);
-   });
-}  
-
-sCountry.addEventListener('change', function (e) {
-    e.preventDefault();
-    phoneCode.textContent ? phoneCode.textContent = "" : ""
-    let get_country_code = countries.find(country => country.name === sCountry.value);
-    getPhoneCode(get_country_code.iso2);
-})
-getCountries();
-
-// ====================================== * Contact Form Validation Coding * ======================================= -->
-const productForm = document.getElementById('productForm');
-const pName = document.getElementById('pName');
-const pEmail = document.getElementById('pEmail');
-const pNumber = document.getElementById('pNumber');
-const pPhoneCode = document.getElementById('pPhoneCode');
-const pMessage = document.getElementById('pmessage');
-const requirements = document.getElementById('requirements');
-const getQuote = document.getElementById('getQuote');
-
-pName.addEventListener('input', function(e){
+salesName.addEventListener('input', function(e){
     e.preventDefault();
     const fullNameregex= /^[a-zA-Z\s\.]+$/;
     if (fullNameregex.test(e.target.value) === false) {
-        pName.value = pName.value.slice(0,pName.value.length - 1)
+        salesName.value = salesName.value.slice(0,salesName.value.length - 1)
       }
 });
 
-pNumber.addEventListener('keydown', function(e){
-    if(e.key==='.' || e.key === '-' || e.key === '+'){
-        e.preventDefault();
-        this.addEventListener('input', function(event){
-            event.target.value = event.target.value.replace(/[^0-9]*/g,'');
-        });
-    }
-});
-
-pEmail.addEventListener('blur', function(e){
+salesEmail.addEventListener('blur', function(e){
     e.preventDefault();
      const emailregex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-     if (emailregex.test(pEmail.value) === false) {
-        pEmail.value = "";
+     if (emailregex.test(salesEmail.value) === false) {
+             salesEmail.value = "";
              return 
          }
  });   
 
- productForm.addEventListener('submit', function(e){
-    if(sCountry.value === ""  || sCountry.value === null){
-        alert('Please Select Your Country')
-        return;
-    }else{
-        getQuote.textContent = "Request Sent...!";
-        pPhoneCode.value = phoneCode.textContent;
-        setTimeout(() => {
-            this.submit();
-        }, 1000);
-    }
+ form.addEventListener('submit', function(e){
+    salesSubmit.textContent = "Message Sent...!";
+    setTimeout(() => {
+        this.submit();
+    }, 1000);
 })

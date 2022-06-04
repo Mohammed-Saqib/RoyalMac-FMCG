@@ -25,10 +25,6 @@
     justify-content: center;
     outline: none;
     background-color: rgba(11, 44, 11,.9);
-    /* animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
-    -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
-    -webkit-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
-    -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s; */
 }
 .navLogo img{
     z-index: 1;
@@ -39,7 +35,6 @@
     -moz-animation: animUpDown 2s ease-in-out infinite alternate-reverse both;
     -o-animation: animUpDown 2s ease-in-out infinite alternate-reverse both;
 }
-
 @keyframes animUpDown {
     0% {
       transform: translateY(4px);
@@ -84,7 +79,6 @@
       -o-transform: translateY(-4px);
     }
 }
-
 .navLogo::after,.navLogo::before{
     content: "";
     position: absolute;
@@ -169,7 +163,6 @@
         top: -30%;
     }
 }
-
 .navButton{
     width:4rem;
     height: 4rem;
@@ -199,29 +192,22 @@
     -o-animation-timing-function: steps;
     opacity: 1;
     border-radius: 50%;
-    border: 5px solid rgba(255,255,255, 0.5);
-    background: rgba(255,255,255, 0.4);
-    z-index: 9;
-}
-.act-scrl-bg::before{
     border: 5px solid rgba(201,37,107,.8);
     background: rgba(201,37,107,.8);
+    z-index: 9;
 }
-
 .stop-anim::before{
     animation: none;
     border: none;
     width: 0;
     height: 0;
 }
-
 #menu-icon{
     z-index: 11 !important;
 }
-.act-scrl-bg #menu-icon > path{
+.navButton #menu-icon > path{
     fill: rgba(48,25,52,0.8);
 }
-
 @keyframes pulsate-btn {
     0% {
         transform: scale(0.7, 0.7);
@@ -238,7 +224,6 @@
         opacity: 0;
     }
   }
-
 .dropdown{
     position: absolute;
     top: 110%;

@@ -35,7 +35,6 @@ $(document).ready(function () {
 window.addEventListener('scroll', function (e) { 
     e.preventDefault();
     this.scrollY > 20 ? document.querySelector('.go-up').classList.add('activeGoUp') : document.querySelector('.go-up').classList.remove('activeGoUp')
-    this.scrollY > 175 ? document.querySelector('.navButton').classList.add('act-scrl-bg') : document.querySelector('.navButton').classList.remove('act-scrl-bg')
  })
 
  //================================== language coding ==================================//

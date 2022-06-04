@@ -3,6 +3,7 @@
     padding: 0px 10px 10px 10px;
 }
 .para{
+    align-self: flex-start;
     text-align: justify;
     font-size: 1.8rem;
     line-height: 2.6rem;
@@ -19,6 +20,7 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(auto, 350px));
     gap: 15px;
+    justify-content: center;
     padding: 10px;
     margin: 10px 0px;
     overflow: hidden;

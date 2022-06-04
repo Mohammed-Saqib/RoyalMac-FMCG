@@ -61,12 +61,21 @@ a{
 .goog-te-gadget select{
     border: none;
     background-color: transparent;
-    color: var(--whiteColor) !important;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0,1) 0%, rgba(255,255,255,1) 10%, rgba(0, 0, 0,1) 20%);
+    background-size: 200% 100%;
+    animation: bgPos 2s linear infinite;
+    -o-animation: bgPos 2s linear infinite;
+    -webkit-animation: bgPos 2s linear infinite;
+    -moz-animation: bgPos 2s linear infinite;
     outline: none;
     border-radius: 3px;
     font-size: 14px;
 }
 .goog-te-gadget select option{
+    color: var(--whiteColor);
     background: rgba(0,0,0,.8);
 }
 .skiptranslate.goog-te-gadget span{
@@ -147,10 +156,6 @@ body{
     font-family: king;
     letter-spacing: 2px;
     color: rgba(201,37,107,1);
-    /* background-image: linear-gradient( 135deg, #ABDCFF 10%, rgba(102,0,153,1) 100%) !important;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent; */
 }
 .opc{
     margin-left: 10px !important;
@@ -225,7 +230,6 @@ body{
    -webkit-transform: translateY(-40px) !important;
    -o-transform: translateY(-40px) !important;
 }
-
 @media only screen and (max-width:750px){
     .section-container{
         width: 90%;
@@ -239,7 +243,6 @@ body{
     }
    
 }
-
 @media only screen and (max-width:450px){
     .section-container{
         width: 95% ;
@@ -252,7 +255,6 @@ body{
         line-height: 3rem;
     }
 }
-
 @media only screen and (max-width:350px){
     .p-heading{
         font-size: 1.5rem;
