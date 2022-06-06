@@ -244,7 +244,6 @@
     -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
     -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
     z-index: 12;
-
 }
 
 #menuItems{
@@ -281,7 +280,6 @@
 }
 .subDrop{
     display: none;
-    
 }
 #menu-icon:active{
     transition: transform 0.4s ease;
