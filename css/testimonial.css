@@ -95,42 +95,129 @@
 }
 .testi-card:nth-child(1) .polygon, .testi-card:nth-child(1) .user-profile{
     background-color: var(--color1);
+    background-image: linear-gradient(to right, var(--color1) 0%, rgba(255, 255, 255, .8)  65%, var(--color1)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(2) .polygon, .testi-card:nth-child(2) .user-profile{
     background-color: var(--color2);
+    background-image: linear-gradient(to right, var(--color2) 0%, rgba(255, 255, 255, .8)  65%, var(--color2)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(3) .polygon, .testi-card:nth-child(3) .user-profile{
     background-color: var(--color3);
+    background-image: linear-gradient(to right, var(--color3) 0%, rgba(255, 255, 255, .8)  65%, var(--color3)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(4) .polygon, .testi-card:nth-child(4) .user-profile{
     background-color: var(--color4);
+    background-image: linear-gradient(to right, var(--color4) 0%, rgba(255, 255, 255, .8)  65%, var(--color4)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(5) .polygon, .testi-card:nth-child(5) .user-profile{
     background-color: var(--color5);
+    background-image: linear-gradient(to right, var(--color5) 0%, rgba(255, 255, 255, .8)  65%, var(--color5)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(6) .polygon, .testi-card:nth-child(6) .user-profile{
     background-color: var(--color6);
+    background-image: linear-gradient(to right, var(--color6) 0%, rgba(255, 255, 255, .8)  65%, var(--color6)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(7) .polygon, .testi-card:nth-child(7) .user-profile{
     background-color: var(--color7);
+    background-image: linear-gradient(to right, var(--color7) 0%, rgba(255, 255, 255, .8)  65%, var(--color7)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(8) .polygon, .testi-card:nth-child(8) .user-profile{
     background-color: var(--color8);
+    background-image: linear-gradient(to right, var(--color8) 0%, rgba(255, 255, 255, .8)  65%, var(--color8)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(9) .polygon, .testi-card:nth-child(9) .user-profile{
     background-color: var(--color9);
+    background-image: linear-gradient(to right, var(--color9) 0%, rgba(255, 255, 255, .8)  65%, var(--color9)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(10) .polygon, .testi-card:nth-child(10) .user-profile{
     background-color: var(--color10);
+    background-image: linear-gradient(to right, var(--color10)0%, rgba(255, 255, 255, .8)  65%, var(--color10)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(11) .polygon, .testi-card:nth-child(11) .user-profile{
     background-color: var(--color11);
+    background-image: linear-gradient(to right, var(--color11)0%, rgba(255, 255, 255, .8)  65%, var(--color11)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(12) .polygon, .testi-card:nth-child(12) .user-profile{
     background-color: var(--color12);
+    background-image: linear-gradient(to right, var(--color12)0%, rgba(255, 255, 255, .8)  65%, var(--color12)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
 }
 .testi-card:nth-child(13) .polygon, .testi-card:nth-child(13) .user-profile{
     background-color: var(--color13);
+    background-image: linear-gradient(to right, var(--color13)0%, rgba(255, 255, 255, .8)  65%, var(--color13)  100%) !important;
+    background-size: 200% 100%;
+    animation: bgPoss 1s linear infinite;
+    -o-animation: bgPoss 1s linear infinite;
+    -webkit-animation: bgPoss 1s linear infinite;
+    -moz-animation: bgPoss 1s linear infinite;
+}
+
+@keyframes bgPoss{
+    0%{
+        background-position: 50% 0;
+    }
+    100%{
+        background-position: -150% 0;
+    }
 }
 
 .testi-card:nth-child(1) .info::before, .testi-card:nth-child(1) .info::after{

@@ -312,9 +312,6 @@
     -moz-transition: transform .3s ease-in-out;
     -o-transition: transform .3s ease-in-out;
 }
-
-
- 
 .cat-1:nth-child(1) .crd-title, .cat-4:nth-child(1) .crd-title{
     color : var(--color1);
 }
