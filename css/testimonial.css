@@ -1,6 +1,5 @@
 .testimonials-container{
     width: 100%;
-    /* padding: 10px; */
     position: relative;
     background: var(--whiteColor);
     padding: 40px 10px !important;
@@ -227,6 +226,9 @@
     margin-left: 10px;
 }
 @media screen and (max-width:450px) {
+    .testimonials-container{
+        padding-right: 20px !important;
+    }
     .swiper-slide{
         width: 90% !important;
     }
