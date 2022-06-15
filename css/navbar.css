@@ -181,29 +181,15 @@
     border-radius: 5rem;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
     opacity: 1;
     background-color: rgba(3,150,255,.7);
     animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
     -webkit-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
     -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
     -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
-}
-.navButton:hover span:nth-child(1){
-    -webkit-transform: translateY(1.5px) rotate(-4.5deg);
-    -ms-transform: translateY(1.5px) rotate(-4.5deg);
-    transform: translateY(1.5px) rotate(-4.5deg);
-    -moz-transform: translateY(1.5px) rotate(-4.5deg);
-    -o-transform: translateY(1.5px) rotate(-4.5deg);
-}
-.navButton:hover span:nth-child(3){
-    -webkit-transform: translateY(-1.5px) rotate(4.5deg);
-    -ms-transform: translateY(-1.5px) rotate(4.5deg);
-    transform: translateY(-1.5px) rotate(4.5deg);
-    -moz-transform: translateY(-1.5px) rotate(4.5deg);
-    -o-transform: translateY(-1.5px) rotate(4.5deg);
-}
-.navButton:hover span:nth-child(2){
-    opacity: .5;
 }
 .stop-anim span:nth-child(1){
     -webkit-transform: translateY(10.5px) rotate(-45deg);
@@ -221,23 +207,7 @@
 }
 .stop-anim span:nth-child(2){
     opacity: 0;
-}
-.stop-anim:hover span:nth-child(1){
-    -webkit-transform: translateY(10px) rotate(-40.5deg);
-    -ms-transform: translateY(10px) rotate(-40.5deg);
-    transform: translateY(10px) rotate(-40.5deg);
-    -moz-transform: translateY(10px) rotate(-40.5deg);
-    -o-transform: translateY(10px) rotate(-40.5deg);
-}
-.stop-anim:hover span:nth-child(3){
-    -webkit-transform: translateY(-10px) rotate(40.5deg);
-    -ms-transform: translateY(-10px) rotate(40.5deg);
-     transform: translateY(-10px) rotate(40.5deg);
-     -moz-transform: translateY(-10px) rotate(40.5deg);
-     -o-transform: translateY(-10px) rotate(40.5deg);
-}
-.stop-anim:hover span:nth-child(2){
-    opacity: 0.1;
+    transform: translateX(15px);
 }
 .navButton::before{
     content: "";
