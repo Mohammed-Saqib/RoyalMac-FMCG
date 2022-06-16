@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/productsQuote.css">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="../../../css/productsQuote.css">
     <!-- Juery Link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
 
@@ -21,68 +21,60 @@
     <!-- ====================================== * Navbar Section * ======================================= -->
     <section class="info-navbar">
         <div class="info-menu">
-            <img src="../images/logo.webp" alt="RoyalMac Logo" loading="lazy" />
+            <img src="../../../images/logo.webp" alt="RoyalMac Logo" loading="lazy" />
             <div class="info-nav">
-                <a href="../index.html">Home</a>
-                <a href="../index.html#products">Our Products</a>
-                <a href="#contact">Contact</a>
+                <a href="../../../index.html">Home</a>
+                <a href="../../../index.html#products">Our Products</a>
+                <a href="#productQuote">Contact</a>
             </div>
             <div class="info-nav-btn">
-                <svg id="info-menu-icon" width="25" height="25" viewBox="0 0 20 20" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 3H20V5H0V3ZM0 9H20V11H0V9ZM0 15H20V17H0V15Z" fill="white" />
+                <svg id="info-menu-icon" width="25" height="25" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 3H20V5H0V3ZM0 9H20V11H0V9ZM0 15H20V17H0V15Z" fill="white"/>
                 </svg>
             </div>
         </div>
         <div class="info-title-bg"
-            style="background: linear-gradient(180deg, rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../images/infoOilBg.webp) fixed no-repeat; background-position: center -100px; background-size: cover;">
-            <h1 class="info-title">Oils</h1>
+            style="background: linear-gradient(180deg, rgba(0,0,0,.4), rgba(0,0,0,.4)), url(../../../images/infoFrozenBg.webp) fixed no-repeat; background-position: center -60px; background-size: cover;">
+            <h1 class="info-title"><a href="../frozen.html">Frozens</a>/<a href="./prawns.html">Prawns</a></h1>
         </div>
     </section>
 
     <!-- ====================================== * body Section * ======================================= -->
     <section class="info-body">
         <p class="info-para">
-            RoyalMac is always capable to supply various sorts of cooking oils, groundnut oil such as cold pressed
-            coconut oils, handcrafted virgin coconut oil, olive oils, as well as all forms of fruit oils, vegetable
-            oils, fish oils, meat oils, and oils for cosmetic manufacture all over the world.
+            RoyalMac is a dedicated frozen meat and fish supplier and distributor in substantial quantities all over the
+            world. We are taking long-term contracts from all around the world and will provide them on a regular basis.
+            We offer various types of meat, seafood, fish, and vegetables from all over the world to high-demand
+            locations and nations. We provide all types of meat, seafood, and vegetables from all over the world to
+            needy areas and nations.
         </p>
     </section>
 
-    <!-- ====================================== * Product Types Gallery Section * ======================================= -->
-    <div class="product-types">
-        <a href="#">
-            <div class="p-t-crd">
-                <img src="../images/coconut.webp" alt="rice">
-                <div class="p-t-crd-content">
-                    <p class="p-t-name">Coconut Oil</p>
-                </div>
+    <!-- ====================================== * Single Product Gallery Section * ======================================= -->
+    <div class="single-product">
+        <div class="p-t-crd">
+            <img src="../../../images/prawn.webp" alt="Prawns">
+            <div class="p-t-crd-content">
+                <p class="p-t-name">Prawns</p>
             </div>
-        </a>
-        <a href="#">
-            <div class="p-t-crd">
-                <img src="../images/olive.webp" alt="wheat">
-                <div class="p-t-crd-content">
-                    <p class="p-t-name">Olive Oil</p>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="p-t-crd">
-                <img src="../images/palm.webp" alt="wheat">
-                <div class="p-t-crd-content">
-                    <p class="p-t-name">Palm Oil</p>
-                </div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="p-t-crd">
-                <img src="../images/peanut.webp" alt="wheat">
-                <div class="p-t-crd-content">
-                    <p class="p-t-name">Peanut Oil</p>
-                </div>
-            </div>
-        </a>
+        </div>
+        <div class="list-of-single-product">
+            <!-- total 5 list in each list-of-single-product[div] -->
+            <ul>
+                <!-- <li><a href=""> &#x2192;</a></li> -->
+                <!-- <li><a href=""> &#x2192;</a></li> -->
+                <!-- <li><a href=""> &#x2192;</a></li> -->
+                <!-- <li><a href=""> &#x2192;</a></li> -->
+                <!-- <li><a href=""> &#x2192;</a></li> -->
+            </ul>
+        </div>
+        <!-- <div class="list-of-single-product">  cotinue the list of products by copy pasting this div
+            <ul>    
+                <li><a href=""> &#x2192; Kashmiri Apple</a></li>
+                <li><a href=""> &#x2192; Green Apple</a></li>
+                <li><a href=""> &#x2192; Fuji Apple</a></li>
+            </ul>
+        </div> -->
     </div>
 
     <!-- ====================================== * Prouct Quote Form * ======================================= -->
@@ -158,7 +150,7 @@
                     </div>
                 </div>
                 <div class="product-form">
-                    <form action="../salesForm/form.php" method="POST" class="productForm" id="productForm">
+                    <form action="../../../salesForm/form.php" method="POST" class="productForm" id="productForm">
                         <p>Enter Product Details</p>
                         <div class="form-group">
                             <label for="pName">Name</label>
@@ -197,12 +189,12 @@
      <section class="footer-container">
          <div class="footer-links">
              <p class="footer-links-info">Jump To: <span>&#x2223;</span></p>
-             <a href="../information/fruits.html">Fruits</a><span>&#x2223;</span>
-             <a href="../information/vegetables.html">Vegetables</a><span>&#x2223;</span>
-             <a href="../information/oil.html">Oils</a><span>&#x2223;</span>
-             <a href="../information/rawFlour.html">Raw Flour</a><span>&#x2223;</span>
-             <a href="../information/dryFruits.html">Dry Fruits</a><span>&#x2223;</span>
-             <a href="../information/spices.html">Spices</a><span>&#x2223;</span>
+             <a href="../../../information/fruits.html">Fruits</a><span>&#x2223;</span>
+             <a href="../../../information/vegetables.html">Vegetables</a><span>&#x2223;</span>
+             <a href="../../../information/oil.html">Oils</a><span>&#x2223;</span>
+             <a href="../../../information/rawFlour.html">Raw Flour</a><span>&#x2223;</span>
+             <a href="../../../information/dryFruits.html">Dry Fruits</a><span>&#x2223;</span>
+             <a href="../../../information/spices.html">Spices</a><span>&#x2223;</span>
          </div>
          <div class="footer-cpyWrite">
              <svg width="15" height="15" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +215,7 @@
     </div>
 
     <!-- ====================================== * Javascript Code * ======================================= -->
-    <script src="../scripts/productQuote.js" defer></script>
+        <script src="../../../scripts/productQuote.js" defer></script>
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
 </body>
 
