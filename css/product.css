@@ -48,6 +48,10 @@
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
     -o-transition: 0.5s;
+    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
+    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .product-card:hover{  
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -80,16 +84,16 @@
     border-radius: 50%;
     z-index: 2;
 }
-.cat-1:nth-child(1) .circle::before, .cat-4:nth-child(1) .circle::before{
+.cat-1:nth-child(1) .circle::before, .cat-4:nth-child(1) .circle::before, .cat-7:nth-child(1) .circle::before{
    box-shadow: 0 0 0 20px var(--color1);
 }
-.cat-1:nth-child(2) .circle::before, .cat-4:nth-child(2) .circle::before{
+.cat-1:nth-child(2) .circle::before, .cat-4:nth-child(2) .circle::before, .cat-7:nth-child(2) .circle::before{
    box-shadow: 0 0 0 20px var(--color2);
 }
-.cat-1:nth-child(3) .circle::before, .cat-4:nth-child(3) .circle::before{
+.cat-1:nth-child(3) .circle::before, .cat-4:nth-child(3) .circle::before, .cat-7:nth-child(3) .circle::before{
    box-shadow: 0 0 0 20px var(--color3);
 }
-.cat-1:nth-child(4) .circle::before, .cat-4:nth-child(4) .circle::before{
+.cat-1:nth-child(4) .circle::before, .cat-4:nth-child(4) .circle::before, .cat-7:nth-child(4) .circle::before{
    box-shadow: 0 0 0 20px var(--color4);
 }
 .cat-2:nth-child(1) .circle::before, .cat-5:nth-child(1) .circle::before{
@@ -143,25 +147,25 @@
     -moz-animation: zoominOut 5s infinite ease-in-out alternate-reverse both;
     -o-animation: zoominOut 5s infinite ease-in-out alternate-reverse both;
 }
-.cat-1:nth-child(1) .circle picture img, .cat-4:nth-child(1) .circle picture img{
+.cat-1:nth-child(1) .circle picture img, .cat-4:nth-child(1) .circle picture img, .cat-7:nth-child(1) .circle picture img{
     animation-delay: -48s !important;
     -webkit-animation-delay: -48s !important;
     -moz-animation-delay: -48s !important;
     -o-animation-delay: -48s !important;
  }
- .cat-1:nth-child(2) .circle picture img, .cat-4:nth-child(2) .circle picture img{
+ .cat-1:nth-child(2) .circle picture img, .cat-4:nth-child(2) .circle picture img, .cat-7:nth-child(2) .circle picture img{
     animation-delay: -.4 !important;
     -webkit-animation-delay: -.4 !important;
     -moz-animation-delay: -.4 !important;
     -o-animation-delay: -.4 !important;
  }
- .cat-1:nth-child(3) .circle picture img, .cat-4:nth-child(3) .circle picture img{
+ .cat-1:nth-child(3) .circle picture img, .cat-4:nth-child(3) .circle picture img, .cat-7:nth-child(3) .circle picture img{
     animation-delay: -.12s !important;
     -webkit-animation-delay: -.12s !important;
     -moz-animation-delay: -.12s !important;
     -o-animation-delay: -.12s !important;
  }
- .cat-1:nth-child(4) .circle picture img, .cat-4:nth-child(4) .circle picture img{
+ .cat-1:nth-child(4) .circle picture img, .cat-4:nth-child(4) .circle picture img, .cat-7:nth-child(4) .circle picture img{
     animation-delay: -.18s !important;
     -webkit-animation-delay: -.18s !important;
     -moz-animation-delay: -.18s !important;
@@ -312,16 +316,16 @@
     -moz-transition: transform .3s ease-in-out;
     -o-transition: transform .3s ease-in-out;
 }
-.cat-1:nth-child(1) .crd-title, .cat-4:nth-child(1) .crd-title{
+.cat-1:nth-child(1) .crd-title, .cat-4:nth-child(1) .crd-title, .cat-7:nth-child(1) .crd-title{
     color : var(--color1);
 }
-.cat-1:nth-child(2) .crd-title, .cat-4:nth-child(2) .crd-title{
+.cat-1:nth-child(2) .crd-title, .cat-4:nth-child(2) .crd-title, .cat-7:nth-child(2) .crd-title{
     color : var(--color2);
 }
-.cat-1:nth-child(3) .crd-title, .cat-4:nth-child(3) .crd-title{
+.cat-1:nth-child(3) .crd-title, .cat-4:nth-child(3) .crd-title, .cat-7:nth-child(3) .crd-title{
     color : var(--color3);
 }
-.cat-1:nth-child(4) .crd-title, .cat-4:nth-child(4) .crd-title{
+.cat-1:nth-child(4) .crd-title, .cat-4:nth-child(4) .crd-title, .cat-7:nth-child(4) .crd-title{
     color : var(--color4);
 }
 .cat-2:nth-child(1) .crd-title, .cat-5:nth-child(1) .crd-title{
@@ -352,16 +356,16 @@
 
 
 
-.cat-1:nth-child(1) .crd-link, .cat-4:nth-child(1) .crd-link{
+.cat-1:nth-child(1) .crd-link, .cat-4:nth-child(1) .crd-link, .cat-7:nth-child(1) .crd-link{
     color : var(--color1);
 }
-.cat-1:nth-child(2) .crd-link, .cat-4:nth-child(2) .crd-link{
+.cat-1:nth-child(2) .crd-link, .cat-4:nth-child(2) .crd-link, .cat-7:nth-child(2) .crd-link{
     color : var(--color2);
 }
-.cat-1:nth-child(3) .crd-link, .cat-4:nth-child(3) .crd-link{
+.cat-1:nth-child(3) .crd-link, .cat-4:nth-child(3) .crd-link, .cat-7:nth-child(3) .crd-link{
     color : var(--color3);
 }
-.cat-1:nth-child(4) .crd-link, .cat-4:nth-child(4) .crd-link{
+.cat-1:nth-child(4) .crd-link, .cat-4:nth-child(4) .crd-link, .cat-7:nth-child(4) .crd-link{
     color : var(--color4);
 }
 .cat-2:nth-child(1) .crd-link, .cat-5:nth-child(1) .crd-link{
@@ -410,16 +414,16 @@
     -o-transform-origin: left;
 }
 
-.cat-1:nth-child(1) .crd-link::before , .cat-1:nth-child(1) .crd-link::after, .cat-4:nth-child(1) .crd-link::before , .cat-4:nth-child(1) .crd-link::after{
+.cat-1:nth-child(1) .crd-link::before , .cat-1:nth-child(1) .crd-link::after, .cat-4:nth-child(1) .crd-link::before , .cat-4:nth-child(1) .crd-link::after, .cat-7:nth-child(1) .crd-link::before , .cat-7:nth-child(1) .crd-link::after{
     background-color: var(--color1);
 }
-.cat-1:nth-child(2) .crd-link::before , .cat-1:nth-child(2) .crd-link::after, .cat-4:nth-child(2) .crd-link::before , .cat-4:nth-child(2) .crd-link::after{
+.cat-1:nth-child(2) .crd-link::before , .cat-1:nth-child(2) .crd-link::after, .cat-4:nth-child(2) .crd-link::before , .cat-4:nth-child(2) .crd-link::after, .cat-7:nth-child(2) .crd-link::before , .cat-7:nth-child(2) .crd-link::after{
     background-color: var(--color2);
 }
-.cat-1:nth-child(3) .crd-link::before , .cat-1:nth-child(3) .crd-link::after, .cat-4:nth-child(3) .crd-link::before , .cat-4:nth-child(3) .crd-link::after{
+.cat-1:nth-child(3) .crd-link::before , .cat-1:nth-child(3) .crd-link::after, .cat-4:nth-child(3) .crd-link::before , .cat-4:nth-child(3) .crd-link::after, .cat-7:nth-child(3) .crd-link::before , .cat-7:nth-child(3) .crd-link::after{
     background-color: var(--color3);
 }
-.cat-1:nth-child(4) .crd-link::before , .cat-1:nth-child(4) .crd-link::after, .cat-4:nth-child(4) .crd-link::before , .cat-4:nth-child(4) .crd-link::after{
+.cat-1:nth-child(4) .crd-link::before , .cat-1:nth-child(4) .crd-link::after, .cat-4:nth-child(4) .crd-link::before , .cat-4:nth-child(4) .crd-link::after, .cat-7:nth-child(4) .crd-link::before , .cat-7:nth-child(4) .crd-link::after{
     background-color: var(--color4);
 }
 .cat-2:nth-child(1) .crd-link::before , .cat-2:nth-child(1) .crd-link::after, .cat-5:nth-child(1) .crd-link::before , .cat-5:nth-child(1) .crd-link::after{
@@ -447,89 +451,41 @@
     background-color: var(--color12);
 }
 
-.cat-1:nth-child(1)::after, .cat-4:nth-child(1)::after{
+.cat-1:nth-child(1)::after, .cat-4:nth-child(1)::after, .cat-7:nth-child(1)::after{
     background-image: linear-gradient(to right, var(--color1) 0%, #ABDCFF  51%, var(--color1)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.cat-1:nth-child(2)::after, .cat-4:nth-child(2)::after{
+.cat-1:nth-child(2)::after, .cat-4:nth-child(2)::after, .cat-7:nth-child(2)::after{
     background-image: linear-gradient(to right, var(--color2) 0%, #ABDCFF  51%, var(--color2)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.cat-1:nth-child(3)::after, .cat-4:nth-child(3)::after{
+.cat-1:nth-child(3)::after, .cat-4:nth-child(3)::after, .cat-7:nth-child(3)::after{
     background-image: linear-gradient(to right, var(--color3) 0%, #ABDCFF  51%, var(--color3)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
-.cat-1:nth-child(4)::after, .cat-4:nth-child(4)::after{
+.cat-1:nth-child(4)::after, .cat-4:nth-child(4)::after, .cat-7:nth-child(4)::after{
     background-image: linear-gradient(to right, var(--color4) 0%, #ABDCFF  51%, var(--color4)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-2:nth-child(1)::after, .cat-5:nth-child(1)::after{
     background-image: linear-gradient(to right, var(--color5) 0%, #ABDCFF  51%, var(--color5)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-2:nth-child(2)::after, .cat-5:nth-child(2)::after{
     background-image: linear-gradient(to right, var(--color6) 0%, #ABDCFF  51%, var(--color6)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-2:nth-child(3)::after, .cat-5:nth-child(3)::after{
     background-image: linear-gradient(to right, var(--color7) 0%, #ABDCFF  51%, var(--color7)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-2:nth-child(4)::after, .cat-5:nth-child(4)::after{
     background-image: linear-gradient(to right, var(--color8) 0%, #ABDCFF  51%, var(--color8)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-3:nth-child(1)::after, .cat-6:nth-child(1)::after{
     background-image: linear-gradient(to right, var(--color9) 0%, #ABDCFF  51%, var(--color9)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-3:nth-child(2)::after, .cat-6:nth-child(2)::after{
     background-image: linear-gradient(to right, var(--color10) 0%, #ABDCFF  51%, var(--color10)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-3:nth-child(3)::after, .cat-6:nth-child(3)::after{
     background-image: linear-gradient(to right, var(--color11) 0%, #ABDCFF  51%, var(--color11)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 .cat-3:nth-child(4)::after, .cat-6:nth-child(4)::after{
     background-image: linear-gradient(to right, var(--color12) 0%, #ABDCFF  51%, var(--color12)  100%) !important;
-    animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -moz-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
-    -o-animation: shades 1.5s infinite ease-in-out alternate-reverse both;
 }
 
 @keyframes shades {

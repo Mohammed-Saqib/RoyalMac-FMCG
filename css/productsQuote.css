@@ -92,7 +92,7 @@
     padding: 0px 10px;
     width: 85%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
     gap: 10px 15px;
     align-items: center;
 }
@@ -139,7 +139,7 @@
 }
 .p-t-crd{
     width: 250px;
-    height: 150px;
+    height: 200px;
     position: relative;
     overflow: hidden;
 }
@@ -263,6 +263,7 @@
     font-size: 1.6rem;
     line-height: 3rem;
     text-align: justify;
+    margin: 15px 0px;
 }
 
 .info-nav-btn{

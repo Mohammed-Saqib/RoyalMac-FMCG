@@ -152,10 +152,20 @@ body{
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 0;
+    letter-spacing: 2px;
     font-display: swap;
     font-family: king;
-    letter-spacing: 2px;
     color: rgba(201,37,107,1);
+}
+.p-heading a{
+    font-display: swap;
+    font-family: king;
+    text-decoration: none;
+    color: rgba(201,37,107,1);
+    cursor: pointer;
+}
+.p-heading a:hover{
+    color: rgba(255,20,175,1);
 }
 .opc{
     margin-left: 10px !important;
