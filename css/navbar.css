@@ -209,6 +209,7 @@
     opacity: 0;
     transform: translateX(15px);
 }
+
 .navButton::before{
     content: "";
     position: absolute;
