@@ -246,6 +246,12 @@
 .product-card:hover{
     background-color: rgba(102,0,153,.02);
 }
+.product-card a{
+    color: var(--black);
+}
+.product-card a:active{
+    color: var(--color13);
+}
 .crd-title{
     font-size: 2rem;
     line-height: 2.5rem;
