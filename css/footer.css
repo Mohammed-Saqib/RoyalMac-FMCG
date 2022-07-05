@@ -9,7 +9,7 @@
     background-color: var(--whiteColor);
     display: flex;
     flex-wrap: wrap;
-    row-gap: 20px;
+    gap: 20px;
     justify-content: center;
     overflow: hidden;
 }
@@ -17,20 +17,21 @@
     outline: 1px solid;
     max-width: 440px;
     text-align: center;
-    padding: 20px;
+    padding: 20px 10px;
     position: relative;
     border-radius: 1px;
     border: none;
     outline: none;
     overflow: hidden;
     border-radius: 10px;
+    background-color: aliceblue;
 }
 .ourClients-crd::before{
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 4px;
+    width: 0%;
     height: 100%;
     border: none;
     outline: none;
@@ -38,8 +39,8 @@
 }
 .client-name{
     font-family: king;
-    font-size: 3.5rem;
-    line-height: 3.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
     word-wrap: break-word;
     font-weight: 900;
     letter-spacing: 2px;
