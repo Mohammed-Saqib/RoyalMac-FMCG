@@ -7,24 +7,76 @@
 .ourClients-crd-container{
     width: 100%;
     background-color: var(--whiteColor);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    overflow: hidden;
+    padding: 10px 0px;
 }
 .ourClients-crd{
     outline: 1px solid;
-    max-width: 440px;
+    min-width: 250px !important;
+    max-width: 400px !important;
     text-align: center;
     padding: 20px 10px;
     position: relative;
-    border-radius: 1px;
     border: none;
     outline: none;
     overflow: hidden;
     border-radius: 10px;
-    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, .1);
+    position: relative;
+    background-image: url(../images/clientCrdBg.jpg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: waterMov 15s  infinite linear alternate-reverse both;
+    -webkit-animation: waterMov 15s  infinite linear alternate-reverse both;
+    -ms-animation: waterMov 15s  infinite linear alternate-reverse both;
+    -moz-animation: waterMov 15s  infinite linear alternate-reverse both;
+    -o-animation: waterMov 15s  infinite linear alternate-reverse both;
+}
+
+@keyframes waterMov {
+    0%{
+        background-size: 100% 100%;
+    }
+    100%{
+        background-size: 150% 500%;
+    }
+}
+@-webkit-keyframes waterMov {
+    0%{
+        background-size: 100% 100%;
+    }
+    100%{
+        background-size: 150% 500%;
+    }
+}
+.client-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    border-radius: 77% 23% 65% 35% / 24% 64% 36% 76%;
+    background-color: var(--whiteColor);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1), inset 0 0 10px rgba(0, 0, 0, .1),
+    inset 3px 3px 5px rgba(255,20,175,.3), 10px 10px 10px rgba(0, 0, 0, .1),
+    inset -3px -3px 5px rgba(79, 131, 240,.5);
+    animation: rotact 12s infinite ease-in-out alternate-reverse both;
+    -webkit-animation: rotact 12s infinite ease-in-out alternate-reverse both;
+    -ms-animation: rotact 12s infinite ease-in-out alternate-reverse both;
+    -moz-animation: rotact 12s infinite ease-in-out alternate-reverse both;
+    -o-animation: rotact 12s infinite ease-in-out alternate-reverse both;
+    overflow: hidden;
+}
+.client-img img{
+    max-width: 75%;
+    max-height: 75%;
+    object-fit: cover;
+    object-position:center;
 }
 .ourClients-crd::before{
     content: "";
@@ -44,29 +96,11 @@
     word-wrap: break-word;
     font-weight: 900;
     letter-spacing: 2px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 1px 1px 1px rgba(0, 0, 0, .2);
-    background: linear-gradient( 135deg,  rgba(22,22,22,.9) 10%, rgba(255,20,175,.9) 100% );
+    text-shadow: 0 0 10px rgba(255, 255, 255, .3), 0 0 5px rgba(255, 255, 255, .1), 0 0 1px rgba(255, 255, 255, 1), 0 0 1px rgba(255, 255, 255, 1);
+    background-image: linear-gradient( 135deg,  rgba(255,255,255,1) 10%, rgba(207,37,107,.2) 60%, rgba(255,255,255,1) 100% );
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-}
-.ourClients-crd:nth-child(1)::before{
-    background-color: var(--color1);
-}
-.ourClients-crd:nth-child(2)::before{
-    background-color: var(--color2);
-}
-.ourClients-crd:nth-child(3)::before{
-    background-color: var(--color3);
-}
-.ourClients-crd:nth-child(4)::before{
-    background-color: var(--color4);
-}
-.ourClients-crd:nth-child(5)::before{
-    background-color: var(--color5);
-}
-.ourClients-crd:nth-child(6)::before{
-    background-color: var(--color6);
 }
 
 /* Footer Coding Starts From Here */
@@ -163,16 +197,13 @@
         font-size: 1.4rem;
         line-height: 2.8rem;
     }
-    .ourClients-crd-container{
-        flex-direction: column;
-        justify-content: center;
-    }
     .ourClients-crd{
         width: 100%;
         padding: 10px 10px;
+        row-gap: 15px;
     }
     .client-name{
-        font-size: 2.5rem;
-        line-height: 2.5rem;
+        font-size: 2rem;
+        line-height: 2rem;
     }
 }

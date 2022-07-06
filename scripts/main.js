@@ -71,6 +71,18 @@ shipAnim.addEventListener("animationend", function() {
      window.scrollTo(0 , 0);
  })
 
+// ====================================== * Our Client * ======================================= -->
+var swiper = new Swiper(".client-slider", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    grabCursor: true,
+    spaceBetween: 30,
+    loop : true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+});
 // ====================================== * Testimonials * ======================================= -->
 var swiper = new Swiper(".testimonials-container", {
     effect: "coverflow",
