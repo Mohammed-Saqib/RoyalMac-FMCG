@@ -145,6 +145,7 @@ body{
 @font-face {
     font-family: king;
     src: url(../fonts/rise-of-kingdom.regular.ttf);
+    font-display: swap;
 }
 .p-heading{
     font-size: 3rem;
