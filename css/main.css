@@ -241,6 +241,11 @@ body{
    -webkit-transform: translateY(-40px) !important;
    -o-transform: translateY(-40px) !important;
 }
+.f-style{
+    font-family: king;
+    font-weight: bold;
+    color: var(--color13);
+}
 @media only screen and (max-width:750px){
     .section-container{
         width: 90%;
