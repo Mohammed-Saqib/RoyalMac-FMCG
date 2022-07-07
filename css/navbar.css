@@ -275,7 +275,7 @@
     z-index: 12;
 }
 
-#menuItems{
+.menuItems{
  display: inline-block;
  width: 100%;
  padding: 10px;
@@ -289,11 +289,11 @@
  border-radius: .25rem;
 }
 
-#menuItems:hover{
+.menuItems:hover{
     background: rgba(255, 255, 255, .4);
 }
 
-#menuSubItems{
+.menuSubItems{
     display: inline-block;
     width: 100%;
     padding: 10px;
@@ -304,7 +304,7 @@
     color: var(--whiteColor);
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
-#menuSubItems:hover{
+.menuSubItems:hover{
     background: rgba(255, 255, 255, .4);
 }
 .subDrop{
@@ -347,11 +347,11 @@
     .dropdown{
         width: 125px;
     }
-    #menuItems{
+    .menuItems{
         font-size: 1.2rem;
         line-height: 1.4rem;
        }
-       .subDrop li #menuSubItems{
+       .subDrop li .menuSubItems{
            font-size: 1rem;
            line-height: 1.4rem;
        }
