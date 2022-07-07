@@ -21,9 +21,10 @@
     overflow: hidden;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
-    row-gap: 20px;
+    justify-content: center;
+    column-gap: 20px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, .1);
     position: relative;
     background-image: url(../images/clientCrdBg.jpg);
@@ -54,27 +55,15 @@
     }
 }
 .client-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    padding: 10px;
+    width: 80px;
+    height: 80px;
     display: grid;
     place-items: center;
-    border-radius: 77% 23% 65% 35% / 24% 64% 36% 76%;
-    background-color: var(--whiteColor);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1), inset 0 0 10px rgba(0, 0, 0, .1),
-    inset 3px 3px 5px rgba(255,20,175,.3), 10px 10px 10px rgba(0, 0, 0, .1),
-    inset -3px -3px 5px rgba(79, 131, 240,.5);
-    animation: rotact 12s infinite ease-in-out alternate-reverse both;
-    -webkit-animation: rotact 12s infinite ease-in-out alternate-reverse both;
-    -ms-animation: rotact 12s infinite ease-in-out alternate-reverse both;
-    -moz-animation: rotact 12s infinite ease-in-out alternate-reverse both;
-    -o-animation: rotact 12s infinite ease-in-out alternate-reverse both;
     overflow: hidden;
 }
 .client-img img{
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: cover;
     object-position:center;
 }
@@ -83,13 +72,15 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 0%;
+    width: 3%;
     height: 100%;
     border: none;
     outline: none;
-    background-color: var(--color11);
+    border-radius: 10px 0 0 10px;
+    background-color: var(--whiteColor);
 }
 .client-name{
+    width: calc(100% - 120px);
     font-family: king;
     font-size: 3rem;
     line-height: 3rem;
