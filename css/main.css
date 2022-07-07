@@ -244,7 +244,7 @@ body{
 .f-style{
     font-family: king;
     font-weight: bold;
-    color: var(--color13);
+    /* color: var(--color13); */
 }
 @media only screen and (max-width:750px){
     .section-container{
