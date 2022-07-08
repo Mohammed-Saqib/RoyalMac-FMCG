@@ -22,7 +22,7 @@ right: 0;
 -webkit-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
 -moz-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s;
 -o-animation: bckColorChange 30s ease-in-out infinite alternate-reverse both 5s; */
-animation: opac 10s ease-in-out;
+animation: opac 7s ease-in-out;
 z-index: 2;
 transition: background-color .3s ease-in-out;
 -webkit-transition: background-color .3s ease-in-out;

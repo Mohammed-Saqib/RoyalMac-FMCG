@@ -60,7 +60,7 @@ const logo = document.querySelector('.right-carousel');
 const shipAnim = document.querySelector('.box-move');
 setTimeout(() => {
     logo.classList.add('hide-logo');
-}, 3500);
+}, 1000);
 shipAnim.addEventListener("animationend", function() {
     shipAnim.classList.add('shipAnim');
 });
